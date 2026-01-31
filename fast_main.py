@@ -7,7 +7,6 @@ import random
 import threading
 import glob
 import logging
-import re
 from tqdm import tqdm
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
@@ -26,16 +25,10 @@ from litellm import completion as original_completion
 
 litellm.suppress_debug_info = True
 litellm.drop_params = True
-# Nuke all logging from orbit
-for logger_name in ["litellm", "httpx", "httpcore"]:
-    l = logging.getLogger(logger_name)
-    l.setLevel(logging.CRITICAL)
-    l.propagate = False
 
 def robust_completion(*args, **kwargs):
     if 'timeout' not in kwargs:
         kwargs['timeout'] = 120.0 
-
     max_retries = 10
     attempt = 0
     while attempt < max_retries:
@@ -43,229 +36,144 @@ def robust_completion(*args, **kwargs):
             return original_completion(*args, **kwargs)
         except Exception as e:
             error_str = str(e).lower()
-            # Catch everything that looks like a temp failure
-            if any(x in error_str for x in ["rate limit", "429", "503", "service unavailable", "overloaded", "timeout", "timed out"]):
+            if any(x in error_str for x in ["rate limit", "429", "503", "service", "overloaded", "timeout"]):
                 attempt += 1
-                wait = 10 + (attempt * 5) + random.uniform(1, 5)
-                time.sleep(wait)
+                time.sleep(10 + (attempt * 5) + random.uniform(1, 5))
                 continue
             raise e
     raise Exception("Max Retries Exceeded")
 
 litellm.completion = robust_completion
 
-import ogc_eval.model
-ogc_eval.model.completion = robust_completion
-
-# --- 3. NEW: BATCH FACT VERIFIER (The Speed Fix) ---
+# --- 3. BATCH FACT VERIFIER ---
 class BatchFactVerifier(FactVerifier):
-    """
-    Verifies ALL claims in a single API call instead of looping.
-    Reduces API usage by ~90%.
-    """
+    """Verifies ALL claims in a single API call."""
     def verify(self, hypothesis_claims, reference_claims):
-        # 1. Initialize variables at the VERY top so they always exist
         response = "" 
         supported_count = 0
-        
         if not hypothesis_claims or not reference_claims:
             return 0.0, 0
 
-        # 2. Update the prompt to be JSON-compliant (use a root object)
         ref_text = "\n".join([f"- {c}" for c in reference_claims])
         claims_text = "\n".join([f"{i+1}. {c}" for i, c in enumerate(hypothesis_claims)])
         
         prompt = f"""Reference Facts:
-    {ref_text}
+{ref_text}
 
-    Claims to Verify:
-    {claims_text}
+Claims to Verify:
+{claims_text}
 
-    Return a JSON object with the key "decisions" containing a list of "YES" or "NO" for each claim.
-    Example: {{"decisions": ["YES", "NO"]}}"""
+Return a JSON object with the key "decisions" containing a list of "YES" or "NO" for each claim.
+Example: {{"decisions": ["YES", "NO"]}}"""
 
         try:
-            # 3. Call the model
+            # Note: response_format requires model support in LLMWrapper
             response = self.model.generate(
-                prompt, 
-                max_new_tokens=1000, 
+                prompt, max_new_tokens=1000, 
                 response_format={ "type": "json_object" } 
             ).strip()
-            
-            # 4. Parse JSON
             data = json.loads(response)
             decisions = data.get("decisions", [])
             supported_count = sum(1 for d in decisions if str(d).upper() == "YES")
-            
         except Exception as e:
-            # 5. Safe Fallback & Debugging
-            # Now response.upper() won't crash because we set response="" at the top
             if response:
                 supported_count = response.upper().count('"YES"')
-            
-            # This will now print the REAL error to your console so you can see it
-            print(f"DEBUG: API or JSON Error: {e}") 
-
-        # 6. Metrics (Simplified & Safe)
-        k = len(reference_claims)
-        k_hat = len(hypothesis_claims)
         
-        # Precision: S / K-hat
+        k, k_hat = len(reference_claims), len(hypothesis_claims)
         precision = min(1.0, supported_count / k_hat) if k_hat > 0 else 0.0
-        # Recall: min(S / K, 1)
         recall = min(1.0, supported_count / k) if k > 0 else 0.0
-        
-        if (precision + recall) == 0:
-            score = 0.0
-        else:
-            # F1 calculation
-            score = 2 * (precision * recall) / (precision + recall)
-        
+        score = (2 * precision * recall / (precision + recall)) if (precision + recall) > 0 else 0.0
         return score, int(supported_count)
 
-# --- 4. CONFIGURATION ---
-MAX_WORKERS = 6  # Keep low for API stability
-abstention_lock = threading.Lock() 
-
-# --- 5. BATCH ABSTENTION (GPU) ---
-def batch_detect_abstention(df, detector):
-    print("   Running Abstention Detection (GPU Batch Mode)...")
+# --- 4. PHASE 1: ABSTENTION (SAGEMAKER/GPU) ---
+def run_abstention_phase(args):
+    print(f"🧠 Phase 1: Abstention Detection (GPU) on {args.input}")
+    detector = AbstentionDetector(device=args.device)
+    df = pd.read_csv(args.input)
+    
     responses = df['generated_response'].fillna("").astype(str).tolist()
     inputs = [r[:4096] for r in responses]
     
-    # Run in batches of 16
     raw_results = detector.classifier(inputs, batch_size=16, truncation=True)
     
-    is_abstained_list = []
+    is_abstained = []
     for res in raw_results:
         label_id = int(res['label'].split('_')[-1])
-        score = res['score']
+        # Score threshold from Section 5.6 of the paper
+        is_abstained.append(False if (label_id in [3, 5] or res['score'] < 0.925) else True)
         
-        if label_id in [3, 5]:
-            judgement = "PASS"
-        elif label_id not in [3, 5] and score < 0.925:
-            judgement = "PASS"
-        else:
-            judgement = "ABSTENTION"
-        is_abstained_list.append(judgement == "ABSTENTION")
-    return is_abstained_list
+    df['is_abstained'] = is_abstained
+    out_path = args.input.replace(".csv", "_abstentions.csv")
+    df.to_csv(out_path, index=False)
+    print(f"✅ Saved results with abstentions to: {out_path}")
 
-# --- 6. WORKERS ---
-def worker_verify(index, row, afg, verifier, is_abstained, gt_facts):
+# --- 5. PHASE 2: VERIFICATION (LOCAL/API) ---
+def worker_verify(index, row, afg, verifier):
+    """Individual row processor for ThreadPool."""
     try:
-        if is_abstained:
+        gt_facts_raw = row.get('response_facts', "[]")
+        gt_facts = json.loads(gt_facts_raw) if isinstance(gt_facts_raw, str) else gt_facts_raw
+
+        if row['is_abstained']:
             return index, {
-                "prompt": row['prompt'], "domain": row["serviceDomain"], "generated_response": row.get('generated_response', ''),
+                "prompt": row['prompt'], "domain": row.get("serviceDomain", ""), 
                 "is_abstained": True, "score": 0.0, "supported_claims": 0,
-                "afg_k_gen": 0, "afg_k_gt": len(gt_facts),
-                "gen_facts": "[]", "gt_facts": json.dumps(gt_facts)
+                "afg_k_gen": 0, "afg_k_gt": len(gt_facts)
             }
 
-        gen_response = row.get('generated_response', '')
-        gen_facts, k_gen = afg.run(gen_response)
-        
-        # USE NEW BATCH VERIFIER
-        accuracy_score, supported_count = verifier.verify(gen_facts, gt_facts)
+        gen_facts, k_gen = afg.run(row['generated_response'])
+        score, supported = verifier.verify(gen_facts, gt_facts)
         
         return index, {
-            "prompt": row['prompt'], "domain": row["serviceDomain"], "generated_response": gen_response,
-            "is_abstained": False, "score": accuracy_score, "supported_claims": supported_count,
+            "prompt": row['prompt'], "domain": row.get("serviceDomain", ""), 
+            "is_abstained": False, "score": score, "supported_claims": supported,
             "afg_k_gen": k_gen, "afg_k_gt": len(gt_facts),
-            "gen_facts": json.dumps(gen_facts), "gt_facts": json.dumps(gt_facts)
+            "generated_response": row['generated_response']
         }
     except Exception as e:
         return index, {"prompt": row.get('prompt', ''), "error": str(e), "score": 0.0}
 
-# --- 7. CONTROLLER ---
-def process_evaluation(df, input_filename, args, resources):
-    print(f"\n📂 Processing: {input_filename} ({len(df)} rows)")
-    afg, verifier, abstention_detector = resources
+def run_verification_phase(args):
+    print(f"🚀 Phase 2: API Verification (Local) using {args.model}")
+    df = pd.read_csv(args.input)
     
-    # Merge GT
-    if 'response_facts' not in df.columns and args.reference and os.path.exists(args.reference):
-        print(f"   Merging facts from {args.reference}...")
-        ref_df = pd.read_csv(args.reference)
-        df['prompt'] = df['prompt'].astype(str)
-        ref_df['prompt'] = ref_df['prompt'].astype(str)
-        df = df.merge(ref_df[['prompt', 'response_facts']], on='prompt', how='left')
-    
-    # Phase 1: GPU Abstention
-    is_abstained_mask = batch_detect_abstention(df, abstention_detector)
-    
-    # Phase 2: API Verification (Parallel)
-    results_list = [None] * len(df)
-    with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
-        future_to_idx = {}
-        for i, row in df.iterrows():
-            gt_facts_raw = row.get('response_facts', None)
-            gt_facts = []
-            if gt_facts_raw:
-                if isinstance(gt_facts_raw, str):
-                    try: gt_facts = json.loads(gt_facts_raw)
-                    except: gt_facts = [f.strip() for f in gt_facts_raw.split('\n') if f.strip()]
-                else: gt_facts = gt_facts_raw
-
-            future = executor.submit(worker_verify, i, row, afg, verifier, is_abstained_mask[i], gt_facts)
-            future_to_idx[future] = i
-
-        for future in tqdm(as_completed(future_to_idx), total=len(df), desc="   Verifying (Batch Mode)", unit="rows"):
-            idx, res = future.result()
-            results_list[idx] = res
-
-    # Save
-    final_results = [r for r in results_list if r is not None]
-    scores = [r['score'] for r in final_results if 'score' in r]
-    avg_score = sum(scores)/len(scores) if scores else 0
-    print(f"   🏆 Average Score: {avg_score:.2%}")
-    
-    writer = ResultWriter()
-    os.makedirs("eval_outputs", exist_ok=True)
-    out_name = os.path.join("eval_outputs", f"eval_results_{os.path.splitext(input_filename)[0]}")  
-    writer.write(final_results, base_filename=out_name)
-    print(f"   ✅ Saved to {out_name}.csv")
-
-def run_evaluate_batch(args):
-    print(f"🚀 Turbo Batch Evaluate (v8) - Model: {args.model}")
-    print("   (Loading GPU models once... please wait)")
-    
-    llm = LLMWrapper(model_name=args.model, device=args.device, api_key=args.api_key, mock=args.mock)
-    abstention_detector = AbstentionDetector(device=args.device) 
+    # Initialize API-based components
+    llm = LLMWrapper(model_name=args.model, api_key=args.api_key)
     afg = AtomicFactGenerator(llm)
+    verifier = BatchFactVerifier(llm)
     
-    # INJECT BATCH VERIFIER
-    verifier = BatchFactVerifier(llm) 
-    
-    resources = (afg, verifier, abstention_detector)
-    
-    files = []
-    if args.input_dir:
-        files = glob.glob(os.path.join(args.input_dir, "*.csv"))
-    elif args.input:
-        files = [args.input]
-        
-    for f in files:
-        try:
-            loader = DataLoader(f)
-            df = loader.load()
-            process_evaluation(df, os.path.basename(f), args, resources)
-        except Exception as e:
-            print(f"❌ Error {f}: {e}")
+    results = [None] * len(df)
+    # Using thread pool to handle IO-bound API calls
+    with ThreadPoolExecutor(max_workers=8) as executor:
+        futures = {executor.submit(worker_verify, i, row, afg, verifier): i for i, row in df.iterrows()}
+        for future in tqdm(as_completed(futures), total=len(df), desc="Verifying"):
+            idx, res = future.result()
+            results[idx] = res
 
+    # Write final output
+    writer = ResultWriter()
+    writer.write([r for r in results if r], base_filename=f"final_eval_{args.model}")
+    print("✅ Verification complete. Check 'eval_outputs' folder.")
+
+# --- 6. CLI CONTROLLER ---
 if __name__ == "__main__":
     setup_logger()
-    parser = argparse.ArgumentParser()
+    parser = argparse.ArgumentParser(description="OGC-Eval Split Pipeline")
     subparsers = parser.add_subparsers(dest="command", required=True)
-    
-    parent = argparse.ArgumentParser(add_help=False)
-    parent.add_argument("--model", default="groq/llama-3.1-8b-instant")
-    parent.add_argument("--device", default="cuda")
-    parent.add_argument("--api_key", default=None)
-    parent.add_argument("--mock", action="store_true")
 
-    p_eval = subparsers.add_parser("evaluate", parents=[parent])
-    p_eval.add_argument("--input", default=None)
-    p_eval.add_argument("--input_dir", default=None)
-    p_eval.add_argument("--reference", default=None)
-    
+    # Abstain Command
+    p_abs = subparsers.add_parser("abstain")
+    p_abs.add_argument("--input", required=True, help="Raw CSV with generated_responses")
+    p_abs.add_argument("--device", default="cuda")
+
+    # Verify Command
+    p_ver = subparsers.add_parser("verify")
+    p_ver.add_argument("--input", required=True, help="CSV from abstain phase")
+    p_ver.add_argument("--model", required=True)
+    p_ver.add_argument("--api_key", required=True)
+
     args = parser.parse_args()
-    if args.command == "evaluate": run_evaluate_batch(args)
+    if args.command == "abstain":
+        run_abstention_phase(args)
+    elif args.command == "verify":
+        run_verification_phase(args)
