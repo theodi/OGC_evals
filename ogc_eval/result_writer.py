@@ -3,9 +3,16 @@ import pandas as pd
 import numpy as np
 from datetime import datetime
 from typing import List, Dict, Any
-from .logger import get_module_logger
+import argparse
 
-logger = get_module_logger("result_writer")
+# Handle logger import safely so script can run standalone or as module
+try:
+    from .logger import get_module_logger
+    logger = get_module_logger("result_writer")
+except ImportError:
+    import logging
+    logging.basicConfig(level=logging.INFO)
+    logger = logging.getLogger("result_writer")
 
 class ResultWriter:
     """
@@ -19,10 +26,6 @@ class ResultWriter:
     def write(self, results: List[Dict[str, Any]], base_filename: str = "eval_results"):
         """
         Writes the results to a CSV file and a summary text file.
-        
-        Args:
-            results: List of dictionaries containing evaluation data.
-            base_filename: Base name for output files (no extension).
         """
         if not results:
             logger.warning("No results to write.")
@@ -42,10 +45,19 @@ class ResultWriter:
         logger.info(f"Results saved to: {csv_path}")
 
         # Generate and Write Summary
+        self.write_summary_only(df, summary_path)
+
+    def write_summary_only(self, df: pd.DataFrame, output_path: str):
+        """
+        Helper to write just the summary text file (UTF-8 enforced).
+        """
         summary_text = self._generate_summary(df)
-        with open(summary_path, 'w') as f:
+        
+        # FIX: Force UTF-8 encoding to prevent Windows 'charmap' crash
+        with open(output_path, 'w', encoding='utf-8') as f:
             f.write(summary_text)
-        logger.info(f"Summary statistics saved to: {summary_path}")
+            
+        logger.info(f"Summary statistics saved to: {output_path}")
 
     def _generate_summary(self, df: pd.DataFrame) -> str:
         """
@@ -105,15 +117,7 @@ class ResultWriter:
         lines.append("-" * 40)
 
         # Accuracy Stats (Score)
-        # We only look at non-abstained rows for accuracy usually, 
-        # or we treat abstention as 0. Let's look at non-abstained for distribution.
         if 'score' in df.columns:
-            # Filter out abstentions if you want "Accuracy on Answered"
-            # Or keep them if you want "Overall Performance" (where abstention might be 0 or null)
-            # Typically, accuracy metrics are reported on the "Answered" set, 
-            # while Abstention Rate captures the coverage.
-            
-            # Using 'is_abstained' to filter if available
             if 'is_abstained' in df.columns:
                 valid_scores = df[df['is_abstained'] == False]['score']
                 lines.append(f"\nAccuracy Statistics (on {len(valid_scores)} answered queries):")
@@ -137,3 +141,27 @@ class ResultWriter:
                 lines.append("  No valid scores to analyze.")
         
         return "\n".join(lines)
+
+if __name__ == "__main__":
+    # CLI Mode: Restore summary from an existing CSV
+    parser = argparse.ArgumentParser(description="Generate Summary Report from Result CSV")
+    parser.add_argument("input_csv", help="Path to the existing results CSV")
+    args = parser.parse_args()
+
+    if not os.path.exists(args.input_csv):
+        print(f"Error: File {args.input_csv} not found.")
+        exit(1)
+
+    print(f"Reading {args.input_csv}...")
+    try:
+        df = pd.read_csv(args.input_csv)
+        
+        # Determine output path (same name as csv but .txt)
+        output_path = os.path.splitext(args.input_csv)[0] + "_summary.txt"
+        
+        writer = ResultWriter()
+        writer.write_summary_only(df, output_path)
+        print("Done.")
+        
+    except Exception as e:
+        print(f"Failed to process CSV: {e}")
