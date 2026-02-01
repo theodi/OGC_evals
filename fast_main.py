@@ -262,4 +262,3 @@ if __name__ == "__main__":
     args = parser.parse_args()
     if args.command == "abstain": run_abstention_phase(args)
     elif args.command == "verify": run_verification_phase(args)
-    print('start')
