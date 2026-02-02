@@ -1,0 +1,20 @@
+OGC Evals - Evaluation Summary
+Date: 2026-02-02 10:27:37
+Total Samples: 500
+----------------------------------------
+Abstentions: 0 (0.00%)
+----------------------------------------
+
+Verbosity Statistics (on 500 answered queries):
+  Average Verbosity (Δ K): +8.4980
+  Avg Gen Facts (K-hat):  14.03
+  Avg GT Facts (K):       5.53
+----------------------------------------
+
+Accuracy Statistics (on 500 answered queries):
+  Mean:   0.7965
+  Median: 0.9412
+  Min:    0.0000
+  Max:    1.0000
+  Std Dev:0.3224
+  IQR:    0.1492 (Q1=0.8222, Q3=0.9714)
