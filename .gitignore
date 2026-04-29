@@ -216,3 +216,14 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+find_examples.py
+inspect_candidates.py
+search_keywords.py
+get_ground_truth.py
+
+discover_broad_examples.py
+
+find_more_examples.py
+find_new_candidates.py
+append_curated_examples.py
