@@ -8,6 +8,7 @@ LABEL*
 notes.txt
 preliminary*
 test_results/
+parse_keys.py
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -227,3 +228,8 @@ discover_broad_examples.py
 find_more_examples.py
 find_new_candidates.py
 append_curated_examples.py
+
+# AI Assistant context and paper PDFs
+GEMINI.md
+*.pdf
+
