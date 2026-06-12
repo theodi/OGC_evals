@@ -17,7 +17,7 @@ To minimize compute costs and token usage, the standard architecture splits eval
 
 ### Step 1: Precompute Ground Truth Reference (`prepare`)
 * **Frequency:** Once per dataset.  
-* **Purpose:** The "Ground Truth" answers in your dataset must be decomposed into Atomic Facts before they can be used for evaluation. Since this requires LLM calls (using the AFG module), we precompute and save these facts so they don't need to be regenerated for every model you test.
+* **Purpose:** Decomposes the ground-truth answers in your dataset into Atomic Facts. Since this requires LLM calls (using the AFG module), we precompute and save these facts so they don't need to be regenerated for every model you test.
 
 ```bash
 # Example: Prepare the sample dataset (Mock mode)
@@ -28,7 +28,7 @@ python -m ogc_eval.main prepare --input public_set_1.csv --output public_set_1_r
 
 ### Step 2: Evaluate Model Outputs (`evaluate`)
 * **Frequency:** Many times (Once per model or experiment).  
-* **Purpose:** This stage takes your model's generated responses, extracts facts from them, and compares them against the **Reference Dataset** created in Step 1.
+* **Purpose:** Decomposes generated responses and compares them claim-by-claim against the reference facts computed in Step 1.
 
 ```bash
 # Example: Evaluate a model using the Reference Dataset (Mock mode)
@@ -39,45 +39,51 @@ python -m ogc_eval.main evaluate --input public_set_1_reference.csv --mock
 
 ## The High-Performance Parallel Pipeline (`fast_main.py` & `fast_benchmark.py`)
 
-For large-scale evaluations (>22,000 queries) or high-speed testing situations, we provide a heavily optimized, asynchronous parallel execution pipeline. 
+For large-scale evaluations or high-speed testing situations, we provide a heavily optimized, asynchronous parallel execution pipeline. 
 
 ### Why Use the Parallel Pipeline?
 
-#### 1. High Velocity (3x to 7x Speedup)
-The standard sequential pipeline evaluates sentences individually, which incurs immense network and token overhead. The parallel pipeline processes data in batches using `ThreadPoolExecutor` and optimized model loaders, accelerating processing times by up to **7.0x**.
+#### 1. High Velocity (I/O Concurrency)
+The standard sequential pipeline evaluates sentences and claims individually, which incurs immense network latency. The parallel pipeline processes data in batches using concurrent `ThreadPoolExecutor` workers, accelerating processing times by up to **7.0x**.
 
 #### 2. Resolving the "Over-Decomposition" Precision Penalty
-In sequential evaluations, parsing text sentence-by-sentence can sometimes cause the LLM to over-generate highly granular, overlapping, and synonymic claims (often splitting a brief response into **22 to 28 facts**!), depending on sentence structure. This balloons the generated claim count ($\hat{K}$) and artificially penalizes the precision formula:
+In sequential evaluations, parsing text sentence-by-sentence can, in some contexts, cause the LLM to over-generate highly granular, overlapping, and synonymic claims. This balloons the generated claim count ($\hat{K}$) and artificially penalizes the precision formula:
 $$Pr = \frac{Supported}{\hat{K}}$$
+This can drag down the final $F1@K$ metric to an unrepresentative **0.18 - 0.32** score.
 
-By contrast, the **Batch Atomic Fact Generator** parses the generated response *globally* in a single structured call. Guided by retrieved BM25 few-shot demonstrations, it keeps facts concise and dense (averaging **12 to 14 facts**), which generally matches Ground Truth density and yields highly calibrated, representative scores (**0.66 - 0.84** F1@K) that correspond directly with human-annotated baselines.
+By contrast, our updated **Parallel Sentence-Level Atomic Fact Generator** tokenizes text into sentences and extracts atomic claims concurrently across parallel threads. This perfectly preserves the exact, granular, unrestricted sentence-level claim counts ($\hat{K}$) of the standard sequential pipeline, eliminating all "summarization biases" and ensuring a highly calibrated, representative verbosity metric ($\Delta K$) without any artificial claim restrictions.
 
-### Fast Pipeline Commands
+---
 
-#### Step 1: Generate Model Outputs (`fast_benchmark.py`)
+## Fast Pipeline CLI Workflows
+
+The fast pipeline is fully runnable via standard command-line instructions, featuring built-in row slicing and in-memory dynamic fact stitching.
+
+### Step 1: Generate Model Responses (`fast_benchmark.py`)
 Queries provider APIs concurrently (such as Groq or Gemini via LiteLLM) to generate zero-shot and few-shot responses on civic prompts containing demographic metadata.
 ```bash
 python fast_benchmark.py
 ```
 *Saves generated outputs under the `fast_results/` directory.*
 
-#### Step 2: Stitch Ground-Truth Facts (`results_stitch.py`)
-Merges the precomputed reference facts from your reference CSV onto the newly generated model outputs.
-```bash
-python results_stitch.py
-```
-
-#### Step 3: Run Abstention Tagging (`fast_main.py abstain`)
+### Step 2: Run Abstention Tagging (`fast_main.py abstain`)
 Invokes the local sequence-classification PLM on your GPU or CPU to tag whether responses represent disclaimers, refusals, or inability to answer.
 ```bash
-python fast_main.py abstain --input fast_results/kimi_k2_fewshot.csv --device cuda
+python fast_main.py abstain --input fast_results/llama_3.1_8b_fewshot.csv --device cuda
+```
+*You can append `--limit N` to only process the first N rows for quick debugging.*
+
+### Step 3: Run Parallel Verification (`fast_main.py verify`)
+Runs parallel API-based fact checks. It bypasses abstained responses, runs sentence-level extraction and logical entailment checks concurrently, and writes statistical summaries.
+
+```bash
+python fast_main.py verify --input fast_results/llama_3.1_8b_fewshot_abstentions.csv --reference subset_500_public_set_1_reference.csv --model groq/llama-3.1-8b-instant --api_key env --limit 10
 ```
 
-#### Step 4: Batch Verification (`fast_main.py verify`)
-Runs parallel API-based fact checks. It bypasses abstained responses, runs batch logical entailment queries in JSON, and implements **resilient sequential verify fallbacks** on format anomalies to guarantee perfect execution without silent score drops.
-```bash
-python fast_main.py verify --input fast_results/prepped_abstentions/kimi_k2_fewshot_abstentions.csv --reference subset_500_public_set_1_reference.csv --model groq/llama-3.1-8b-instant --api_key YOUR_API_KEY
-```
+#### Usability Upgrades:
+* **Dynamic Slicing (`--limit N`):** Easily run a quick test-slice of any length directly from the terminal without manually creating cropped CSV files.
+* **On-the-Fly Fact Stitching:** You no longer need to run a separate stitching script. `fast_main.py` automatically reads the reference dataset and maps facts in memory during runtime with robust whitespace stripping (`.str.strip()`).
+* **Secure Environment Key Loading (`--api_key env`):** Specifying `env` tells the script to dynamically load your credentials (such as `GROQ_API_KEY`) from `os.environ` (auto-populated from local `notes.txt` on import), keeping your API keys secure.
 
 ---
 
@@ -97,9 +103,8 @@ OGC_evals/
 │   ├── demons/         # Curated few-shot examples ("demons") for AFG
 │   └── prompts/        # System and User prompting text files
 │
-├── fast_main.py        # Optimized, parallel evaluation pipeline (Batch AFG & AFV)
+├── fast_main.py        # Optimized, parallel evaluation pipeline (Parallel AFG & AFV)
 ├── fast_benchmark.py   # Concurrent, multi-threaded LLM response generator
-├── results_stitch.py   # Utility to merge reference facts onto model responses
 ├── evals_visualisation.py # Matplotlib/Seaborn diagnostic dashboard generator
 └── requirements.txt    # Python library dependencies
 ```
