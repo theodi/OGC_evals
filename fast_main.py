@@ -63,22 +63,9 @@ ogc_eval.model.completion = robust_completion
 logger = get_module_logger("fast_main")
 
 
-# Helper utility to strip markdown and isolate JSON blocks
-def clean_json_string(s):
-    s = s.strip()
-    if s.startswith("```"):
-        # Strip leading ```json or ```
-        first_nl = s.find("\n")
-        if first_nl != -1:
-            s = s[first_nl:].strip()
-        if s.endswith("```"):
-            s = s[:-3].strip()
-    return s
-
-
 # Helper utility to robustly deserialize pandas representation of fact lists
 def safe_load_facts(gt_raw):
-    if not gt_raw:
+    if not gt_raw or pd.isna(gt_raw):
         return []
     if isinstance(gt_raw, list):
         return gt_raw
@@ -99,146 +86,79 @@ def safe_load_facts(gt_raw):
     return []
 
 
-# --- 2. BATCH ATOMIC FACT GENERATOR (Speed Fix & Scientific Conformity) ---
-class BatchAtomicFactGenerator(AtomicFactGenerator):
+# --- 2. PARALLEL SENTENCE-LEVEL ATOMIC FACT GENERATOR (Unrestricted Verbosity Fix) ---
+class ParallelSentenceAtomicFactGenerator(AtomicFactGenerator):
     """
-    Decomposes the generated response into atomic facts in a single API call,
-    while fully complying with the scientific methodology:
-    1. Loads instructions from ogc_eval prompts directory.
-    2. Utilizes semantic BM25 retrieval to select the top 3 similar few-shot "demons".
+    Parses generated responses sentence-by-sentence in parallel to ensure
+    there is absolutely NO summarization bias or claim-count restriction,
+    perfectly preserving the unrestricted verbosity metrics of the paper
+    while delivering complete thread speedups.
     """
+    def __init__(self, model, max_workers=5):
+        super().__init__(model)
+        self.max_workers = max_workers
+
     def run(self, text):
         if not text or not isinstance(text, str):
             return [], 0
             
-        # Retrieve similar few-shot demonstrations based on BM25 embedding query mapping
-        few_shot_examples = ""
-        if self.bm25 and self.demons:
-            tokenized_query = text.split(' ')
-            top_matches = self.bm25.get_top_n(tokenized_query, list(self.demons.keys()), n=3)
-            for match in top_matches:
-                facts = self.demons[match]
-                facts_str = "\n".join([f"- {f}" for f in facts])
-                few_shot_examples += f"Text: \"{match}\"\nAtomic Facts:\n{facts_str}\n\n"
-        else:
-            # Fallback to static selection of first 3 if BM25 is not populated
-            logger.warning("BM25 index not available. Falling back to static demon selection.")
-            if self.demons:
-                keys = list(self.demons.keys())[:3]
-                for sentence in keys:
-                    facts = self.demons[sentence]
-                    facts_str = "\n".join([f"- {f}" for f in facts])
-                    few_shot_examples += f"Text: \"{sentence}\"\nAtomic Facts:\n{facts_str}\n\n"
-
-        # Construct prompt matching the style of afg_system instructions
-        prompt = f"""{self.system_prompt}
-
-Here are some retrieval-based examples of how to decompose texts into lists of atomic facts:
-
---- EXAMPLES ---
-{few_shot_examples}--- END EXAMPLES ---
-
-Now, perform your task on the following input text.
-Text:
-"{text}"
-
-Atomic Facts:"""
+        # 1. Split text into sentences using standard sent_tokenize
+        sentences = self._split_sentences(text)
+        all_atoms = []
         
-        try:
-            response = self.model.generate(prompt, max_new_tokens=2000)
-            
-            # Parse output facts
-            facts = []
-            for line in response.split('\n'):
-                line = line.strip()
-                if line.startswith("- ") or line.startswith("* "):
-                    facts.append(line[2:].strip())
-            
-            return facts, len(facts)
-        except Exception as e:
-            logger.error(f"Batch AFG generation failed: {e}")
-            return [], 0
+        # 2. Run sentence-level generation in parallel using thread executor
+        # We iterate in order to preserve original sentence/fact continuity!
+        with ThreadPoolExecutor(max_workers=self.max_workers) as executor:
+            futures = [executor.submit(self._get_atoms_for_sentence, s) for s in sentences]
+            for f in futures:
+                try:
+                    atoms = f.result()
+                    all_atoms.extend(atoms)
+                except Exception as e:
+                    logger.error(f"Failed to get atomic claims for sentence: {e}")
+                    
+        return all_atoms, len(all_atoms)
 
 
-# --- 3. BATCH FACT VERIFIER (Structured, Robust & Sequential Fallback) ---
-class BatchFactVerifier(FactVerifier):
+# --- 3. PARALLEL CLAIM-LEVEL FACT VERIFIER (High-Fidelity Entailment Alignment) ---
+class ParallelFactVerifier(FactVerifier):
     """
     Verifies a batch of generated claims against reference ground truth facts.
-    Implements:
-    1. Instructions from afv_system prompts directory.
-    2. Strict JSON parsing with markdown stripping.
-    3. Manual regex fallback parsing for Claude or models without JSON format support.
-    4. Robust sequential verification fallback on formatting errors to prevent silent 0.0 scores.
+    To ensure absolute logical consistency and alignment with our paper's aims:
+    1. Loads standard system/user templates directly from prompts directory.
+    2. Runs logical entailment checks on each claim concurrently in parallel.
+    3. Eliminates LLM count/index formatting discrepancies completely.
     """
+    def __init__(self, model, max_workers=5):
+        super().__init__(model)
+        self.max_workers = max_workers
+
     def verify(self, hypothesis_claims, reference_claims):
         if not hypothesis_claims or not reference_claims:
             return 0.0, 0
 
         ref_text = "\n".join([f"- {c}" for c in reference_claims])
-        claims_text = "\n".join([f"{i+1}. {c}" for i, c in enumerate(hypothesis_claims)])
+        supported_count = 0
         
-        prompt = f"""{self.system_prompt}
-
-We have a premise consisting of reference facts:
-{ref_text}
-
-We have a list of candidate claims to verify:
-{claims_text}
-
-For EACH claim, determine if it is entailed/supported by the premise.
-Return a JSON object with a single "decisions" key containing a list of "YES" or "NO" answers matching the exact order and length of the claims:
-{{"decisions": ["YES", "NO", ...]}}"""
-
-        response = ""
-        decisions = []
-        try:
-            # Query the model for the decisions list
-            response = self.model.generate(
-                prompt, max_new_tokens=1000, response_format={ "type": "json_object" }
-            ).strip()
-            
-            # Clean and parse JSON
-            cleaned_response = clean_json_string(response)
-            data = json.loads(cleaned_response)
-            decisions = data.get("decisions", [])
-            decisions = [str(d).upper().strip() for d in decisions]
-        except Exception as e:
-            logger.warning(f"Structured JSON verification failed: {e}. Attempting manual parsing/fallback.")
-            
-        # Fallback 1: Manual string parsing if JSON parsing failed
-        if not decisions and response:
-            try:
-                # Seek lines containing yes/no and claim indices
-                lines = response.split('\n')
-                for line in lines:
-                    match = re.search(r'\b(YES|NO)\b', line, re.IGNORECASE)
-                    if match:
-                        decisions.append(match.group(1).upper())
-            except Exception as parse_err:
-                logger.error(f"Fallback manual regex parsing failed: {parse_err}")
-
-        # Fallback 2: Sequential verification as the absolute reliability mechanism
-        # This completely guarantees we never silently fail to 0.0 on model format issues.
-        if len(decisions) != len(hypothesis_claims):
-            logger.warning(
-                f"Decisions list count ({len(decisions)}) does not match claim count ({len(hypothesis_claims)}). "
-                f"Executing sequential fallback verification for ultimate reliability..."
-            )
-            decisions = []
+        # Concurrently evaluate logical entailment for each claim
+        with ThreadPoolExecutor(max_workers=self.max_workers) as executor:
+            futures = []
             for claim in hypothesis_claims:
+                messages = [
+                    {"role": "system", "content": self.system_prompt},
+                    {"role": "user", "content": self.user_prompt_template.format(reference_text=ref_text, claim=claim)}
+                ]
+                futures.append(executor.submit(self.model.classify, messages, options=["YES", "NO"]))
+            
+            for f in futures:
                 try:
-                    messages = [
-                        {"role": "system", "content": self.system_prompt},
-                        {"role": "user", "content": self.user_prompt_template.format(reference_text=ref_text, claim=claim)}
-                    ]
-                    output = self.model.classify(messages, options=["YES", "NO"])
-                    decisions.append("YES" if "YES" in output.upper() else "NO")
-                except Exception as seq_err:
-                    logger.error(f"Sequential fallback verification failed for claim '{claim}': {seq_err}")
-                    decisions.append("NO")
+                    output = f.result()
+                    if "YES" in output.upper():
+                        supported_count += 1
+                except Exception as e:
+                    logger.error(f"Parallel verification of claim failed: {e}")
 
-        # Compile metrics based on verified decisions
-        supported_count = sum(1 for d in decisions if d == "YES")
+        # Compute metrics matching paper equations (Section 5.4)
         k, k_hat = len(reference_claims), len(hypothesis_claims)
         
         precision = min(1.0, supported_count / k_hat) if k_hat > 0 else 0.0
@@ -256,10 +176,21 @@ def run_abstention_phase(args):
     
     for f in files:
         df = pd.read_csv(f)
+        
+        # Handlebuilt-in dataset slicing CLI argument
+        if args.limit is not None:
+            df = df.head(args.limit)
+            print(f"✂️  Slicing input dataset to the first {args.limit} rows (due to --limit).")
+
         responses = df['generated_response'].fillna("").astype(str).tolist()
         
-        # Batch Inference using HuggingFace classifier
-        raw_results = detector.classifier(responses, batch_size=16, truncation=True)
+        # Chunked Inference with tqdm progress tracking
+        raw_results = []
+        batch_size = 16
+        for i in tqdm(range(0, len(responses), batch_size), desc="Abstention Progress"):
+            chunk = responses[i : i + batch_size]
+            results = detector.classifier(chunk, truncation=True)
+            raw_results.extend(results)
         
         is_abstained = []
         for res in raw_results:
@@ -299,10 +230,10 @@ def worker_verify(index, row, afg, verifier):
                 "error": ""
             }
 
-        # 1. Batch Claim Atomisation
+        # 1. Parallel Claim Atomisation (Sentence-level)
         gen_facts, k_gen = afg.run(gen_resp)
         
-        # 2. Batch Claim Entailment Verification
+        # 2. Parallel Claim Entailment Verification
         score, supported = verifier.verify(gen_facts, gt_facts)
         
         return index, {
@@ -336,13 +267,27 @@ def run_verification_phase(args):
     # Load Reference dataset once for fast mapping
     print(f"📂 Loading Ground Truth Reference Data from {args.reference}...")
     ref_df = pd.read_csv(args.reference)
-    ref_map = dict(zip(ref_df['prompt'].astype(str), ref_df['response_facts']))
+    
+    # Clean Reference keys to prevent trailing whitespace carriage return mismatches
+    ref_df['prompt_clean'] = ref_df['prompt'].astype(str).str.strip()
+    ref_map = dict(zip(ref_df['prompt_clean'], ref_df['response_facts']))
 
     files = glob.glob(os.path.join(args.input_dir, "*.csv")) if args.input_dir else [args.input]
     
-    llm = LLMWrapper(model_name=args.model, api_key=args.api_key)
-    afg = BatchAtomicFactGenerator(llm)
-    verifier = BatchFactVerifier(llm)
+    # Auto-resolve API key from environment if 'env' is specified or missing
+    api_key = args.api_key
+    if api_key == "env" or not api_key:
+        if "groq" in args.model.lower():
+            api_key = os.environ.get("GROQ_API_KEY")
+        elif "gemini" in args.model.lower():
+            api_key = os.environ.get("GEMINI_API_KEY")
+        elif "claude" in args.model.lower():
+            api_key = os.environ.get("ANTHROPIC_API_KEY")
+
+    llm = LLMWrapper(model_name=args.model, api_key=api_key)
+    # Instantiate Parallel generators and verifiers to enforce scientific identity
+    afg = ParallelSentenceAtomicFactGenerator(llm, max_workers=5)
+    verifier = ParallelFactVerifier(llm, max_workers=5)
     writer = ResultWriter()
 
     for f in files:
@@ -355,13 +300,21 @@ def run_verification_phase(args):
         print(f"🚀 Verifying model responses in: {f}...")
         df = pd.read_csv(f)
         
-        # Map response facts onto the working dataframe
-        df['prompt'] = df['prompt'].astype(str)
-        df['response_facts'] = df['prompt'].map(ref_map)
+        # Handle built-in dataset slicing CLI argument
+        if args.limit is not None:
+            df = df.head(args.limit)
+            print(f"✂️  Slicing input dataset to the first {args.limit} rows (due to --limit).")
         
-        missing_facts = df['response_facts'].isna().sum()
-        if missing_facts > 0:
-            print(f"⚠️  WARNING: {missing_facts} rows are missing Ground Truth reference facts. Factuality scores will evaluate to 0.0.")
+        # Dynamic On-the-Fly Fact Stitching (In-Memory)
+        df['prompt_clean'] = df['prompt'].astype(str).str.strip()
+        df['response_facts'] = df['prompt_clean'].map(ref_map)
+        df = df.drop(columns=['prompt_clean'])
+        
+        stitched_count = df['response_facts'].notna().sum()
+        failed_count = df['response_facts'].isna().sum()
+        print(f"📊 Stitch Status: {stitched_count} rows matched reference facts. {failed_count} rows failed to match.")
+        if failed_count > 0:
+            print("⚠️  WARNING: Mismatched rows will evaluate to 0.0 factuality scores!")
 
         results = [None] * len(df)
         with ThreadPoolExecutor(max_workers=6) as executor:
@@ -389,6 +342,8 @@ if __name__ == "__main__":
         p = subparsers.add_parser(cmd)
         p.add_argument("--input", default=None)
         p.add_argument("--input_dir", default=None)
+        # Built-in slicing limit option for all commands
+        p.add_argument("--limit", type=int, default=None, help="Limit processing to the first N rows")
         if cmd == "abstain": 
             p.add_argument("--device", default="cuda")
         else:

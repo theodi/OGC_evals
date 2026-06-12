@@ -1,0 +1,1902 @@
+prompt,generated_response,is_abstained,score,supported_claims,afg_k_gen,afg_k_gt,domain,error
+I'm planning to take my driving test soon. How do I book a theory test and what information do I need to provide?,"To book your driving theory test, you need to do it through the official GOV.UK booking service. Here’s how:
+
+1. **Go to the GOV.UK website**:  
+   Use this link: [Book a theory test](https://www.gov.uk/browse/driving)
+
+2. **Choose the right type of test**:  
+   You’ll need the theory test for cars if you're aiming for a standard car licence.
+
+3. **Provide your details**:  
+   Have the following ready:  
+   - Your UK driving licence number (you need a provisional licence to book)  
+   - An email address (to get confirmation)  
+   - A debit or credit card to pay the fee (currently £23)
+
+4. **Choose your test centre and date**:  
+   You can enter your postcode to find the nearest test centres and available dates.
+
+5. **Confirm and pay**:  
+   After selecting your date and time, pay to confirm your booking.
+
+You’ll get a confirmation email with your booking details. Bring your provisional licence with you to the test.
+
+Avoid unofficial booking websites — they may charge extra. Always use the official GOV.UK service.",False,0.9333333333333333,14,16,14,,
+What do I need to do if I want to apply for a full driving licence after passing my test?,"If you’ve passed your driving test, here’s what to do to get your full driving licence:
+
+1. **Your examiner will send your test pass details directly to the DVLA** if you gave them your provisional licence at the test.  
+   - You should get your full licence by post within 3 weeks.
+   - You can drive straight away as long as your car is insured and taxed.
+
+2. **If you didn’t hand in your provisional licence at the test**, you’ll need to apply for your full licence yourself. You can do this online or by post:
+   - *Online*: Visit [gov.uk/apply-for-full-driving-licence](https://www.gov.uk/apply-for-full-driving-licence)
+   - *By post*: Complete form D1 (available at most Post Offices) and send it with your test pass certificate and provisional licence to DVLA.
+
+3. **Check your details are correct** after your licence arrives. Contact DVLA if anything is wrong.
+
+If you passed in Northern Ireland, the process is slightly different — check local guidance for that.
+
+For more on driving licences, visit: [https://www.gov.uk/browse/driving](https://www.gov.uk/browse/driving)",False,0.8,8,12,8,,
+I'm trying to check the details of a vehicle I'm thinking of buying. How do I make sure the information I've been given matches what the DVLA has on record?,"You can check a vehicle's details for free using the DVLA’s online service. This helps you confirm that the vehicle’s information matches what you’ve been told by the seller.
+
+To check the vehicle details:
+
+1. Go to the DVLA vehicle information checker: https://www.gov.uk/get-vehicle-information-from-dvla  
+2. Enter the vehicle's registration number (number plate).
+3. You’ll see details such as make and model, colour, engine size, fuel type, when it was first registered, and if it has a current MOT and tax.
+
+You can also check the MOT history separately at: https://www.gov.uk/check-mot-history
+
+It’s a good idea to check:
+- The make, model, and colour match the V5C logbook (registration certificate)
+- The MOT record is up to date
+- The mileage records on MOTs follow a steady pattern (to help spot tampering)
+
+If anything doesn't match or things look suspicious, be cautious. You can also pay for a private vehicle history check to see if it’s been stolen or written off.
+
+If you’d prefer to speak to someone or need extra help, a family member or friend could help you use the website, or you could contact DVLA customer support.",False,0.9166666666666666,11,12,12,,
+I just bought a used car and need to update DVLA. What do I need to do and how long will it take?,"If you’ve just bought a used car, you need to tell DVLA you’re the new registered keeper. You can do this online or by post.
+
+**To update DVLA as the new keeper:**
+
+**Option 1: Do it online (fastest)**
+1. Ask the seller for the 12-digit reference number from the green ‘new keeper’ slip (V5C/2) from the log book (V5C).
+2. Go to [https://www.gov.uk/registering-vehicle](https://www.gov.uk/registering-vehicle).
+3. Follow the steps to register the car in your name.
+
+DVLA will send you a new V5C log book by post within about 5 working days.
+
+**Option 2: Do it by post**
+1. The seller fills in section 6 of the log book (V5C), with your name and address.
+2. You both sign section 8.
+3. The seller sends the completed V5C to DVLA.
+4. They should give you the green ‘new keeper’ slip (V5C/2) as proof.
+
+You should receive your new V5C by post within about 4 to 6 weeks.
+
+**Important:**  
+- You must also tax the vehicle before driving it. This can be done at [https://www.gov.uk/vehicle-tax](https://www.gov.uk/vehicle-tax) using the V5C/2 slip.  
+- Make sure you also arrange insurance before driving the car.
+
+For more information, visit: [https://www.gov.uk/browse/driving](https://www.gov.uk/browse/driving)",False,0.962962962962963,13,14,2,,
+I need to drive a vehicle weighing over 3.5 tonnes internationally. What specific licenses and permits do I require to operate in the UK and other countries?,"To drive a vehicle over 3.5 tonnes internationally, you need the correct driving licence and may need additional permits depending on where you're travelling. Here's what you usually need:
+
+### 1. Driving licence
+- You need a **Category C** or **C+E** licence to drive a vehicle over 3.5 tonnes in the UK and abroad.
+  - *C* allows you to drive rigid heavy goods vehicles (HGVs).
+  - *C+E* allows you to drive articulated lorries (with a trailer over 750kg).
+
+You must be at least 18 and hold a Driver Certificate of Professional Competence (CPC) if you’re driving professionally.
+
+### 2. Driver CPC
+- You need the **Driver CPC** if you're driving for hire or reward. This involves passing 4 tests and keeping your qualification up to date with periodic training.
+
+### 3. International permits and documents
+If you're travelling abroad (especially in the EU or EEA), you may need:
+
+- A **valid UK driving licence with the correct category**.
+- An **International Driving Permit (IDP)** in some non-EU countries.
+- A **Driver CPC qualification card** (if driving professionally).
+- A **vehicle operator licence** (if operating commercially).
+- An **ECMT permit** or other transport permits depending on the destination.
+- A **GVW certificate**, **insurance documents**, and **Green Card** where required.
+
+### 4. Tachograph rules
+- If the vehicle is used for commercial purposes, tachograph rules apply. You’ll need a tachograph card and must follow EU or AETR driving hours rules.
+
+To check specific permits for each country you plan to enter, it’s best to consult the official GOV.UK guidance or contact the DVSA or Department for Transport.
+
+More info: [Driving and transport on GOV.UK](https://www.gov.uk/browse/driving)",False,0.0,0,20,6,,
+How do I apply to join the fleet driver trainer register?,"To apply to join the fleet driver trainer register, you must meet certain requirements and follow the official process through the DVSA (Driver and Vehicle Standards Agency).
+
+Here’s what to do:
+
+1. **Check you’re eligible**  
+   You must be an approved driving instructor (ADI) and have a minimum amount of recent experience. You should also have a clean driving record and no serious complaints made against you.
+
+2. **Take the Fleet Trainer Assessment**  
+   You need to pass a fleet driver trainer assessment, which tests your skills in assessing and training drivers of work-related vehicles. This usually includes:
+   - a driving ability test
+   - a trainer skills test
+   - a knowledge check on fleet training and road risk
+
+3. **Book the assessment**  
+   You can book the fleet assessment via a DVSA provider. The DVSA website or training associations can tell you where and how to do this.
+
+4. **Apply to join the register**  
+   Once you pass the assessment, you can apply to be added to the DVSA's Fleet Register. You may need to pay a fee and send in documents such as your ADI certificate and proof of your fleet assessment result.
+
+5. **Stay on the register**  
+   To keep your place on the register, you’ll need to continue meeting DVSA standards and renew as required.
+
+For the most accurate and up-to-date steps, visit the DVSA section of GOV.UK:  
+[https://www.gov.uk/browse/driving](https://www.gov.uk/browse/driving)
+
+If you're unsure where to begin, contact the DVSA for guidance or speak with a training provider who offers fleet trainer assessments.",False,0.0,0,18,0,,
+I want to ride an e-scooter. Do I need a special licence?,"In England, you can only ride an e-scooter legally on public roads if it's part of an official rental trial run by a local council. You must:
+
+1. Be at least 16 years old.
+2. Hold a full or provisional driving licence with category Q entitlement (this is included in most full and provisional UK car licences).
+
+You do *not* need a special licence just for e-scooters, but you do need a valid driving licence. You cannot ride privately owned e-scooters on public roads, cycle lanes or pavements—it’s illegal and could lead to fines or penalty points.
+
+Privately owned e-scooters can only be used on private land *with* the landowner’s permission.
+
+For more details, visit: [GOV.UK - Driving and transport](https://www.gov.uk/browse/driving)",False,0.8750000000000001,7,9,5,,
+I have rebuilt a vehicle and want to register it. Do I need to get vehicle approval?,"If you’ve rebuilt a vehicle, you might need vehicle approval before you can register it.
+
+Vehicle approval checks that a vehicle meets safety and environmental standards. Whether you need it depends on how much of the original vehicle you’ve kept and what parts you’ve replaced or added.
+
+Here’s what to do:
+
+1. **Work out if the vehicle is classed as rebuilt** – If you’ve kept the original chassis or bodyshell and used mostly original parts, it may count as a rebuilt vehicle. If not, it could be treated as a kit-built or radically altered vehicle.
+
+2. **Check if you need an Individual Vehicle Approval (IVA)** – Most rebuilt vehicles need IVA unless they meet specific rules. The IVA checks things like brakes, lights and emissions.
+
+3. **Gather proof of work done** – You’ll need photos and receipts to show what parts were used and how the work was carried out.
+
+4. **Apply for vehicle approval** – If it’s needed, you must pass the correct vehicle approval scheme before registration. The main one for rebuilt vehicles is the IVA.
+
+5. **Register the vehicle** – After passing approval (if required), you can register your vehicle with DVLA. You’ll need to fill in forms and send documents (like proof of identity, build details and test certificate if you had one).
+
+You can find full information and step-by-step guidance on the GOV.UK website:  
+[Registering a rebuilt vehicle](https://www.gov.uk/vehicle-registration/rebuilt-vehicles)
+
+If you’re unsure about whether approval applies in your case, it’s safest to contact DVLA or check with an approved testing station before registering your vehicle.",False,1.0,14,14,2,,
+Can I report a vehicle without an MOT if it's parked in my driveway?,"You cannot report a vehicle for not having an MOT if it's parked on private property, like a driveway, and is not being driven.
+
+In the UK, vehicles must have a valid MOT if they are used on public roads. If a car without an MOT is parked off-road and not being driven, it does not need an MOT — but it must be declared off the road using a Statutory Off Road Notification (SORN).
+
+If you think a vehicle is being driven on public roads without an MOT, you can report it to the DVSA using their online form.
+
+For more information, visit: [https://www.gov.uk/browse/driving](https://www.gov.uk/browse/driving)",False,0.7272727272727272,4,6,5,,
+Where can I find information about MOT tester courses and training?,"You can find information about becoming an MOT tester, including the training courses you need to take, on GOV.UK.
+
+To start, you’ll need to:
+
+1. Take an approved MOT tester qualification course (called a ‘Level 2 Award’). This is usually offered by training centres across the country.
+2. Once you pass the course, you also need to complete the MOT demonstration test with DVSA to get approved.
+
+You must:
+- Be a qualified mechanic (level 3 qualification or equivalent)
+- Have at least 4 years’ experience working on vehicles
+
+For full details and links to recognised training providers, visit:  
+[https://www.gov.uk/become-an-mot-tester](https://www.gov.uk/become-an-mot-tester)
+
+If you’re thinking ahead and want to know more before starting the process, your local college or careers adviser may also be able to help.",False,0.75,6,9,7,,
+I'm planning to take my motorcycle tests soon. How can I check my test details and make any changes if needed?,"You can check and change your motorcycle test details through the official GOV.UK service.
+
+Here’s how:
+
+1. Go to the DVSA test booking service: [Check or change a driving test](https://www.gov.uk/change-driving-test).
+2. Sign in using your driving licence number and your test booking reference or theory test number.
+3. From there, you can:
+   - View the date, time and location of your booked test
+   - Change the date or test centre (if available)
+   - Cancel the test and get a refund if you give at least 3 working days’ notice
+
+If you booked through an instructor or third-party service, ask them directly as you might not be able to manage the booking yourself.
+
+Make sure you’ve passed your motorcycle theory test before the practical test (if it's required for the category you're testing for).",False,0.7999999999999999,6,8,7,,
+I want to know what types of vehicles I can drive with my current driving licence. How do I check the categories and any restrictions on my licence?,"You can check what types of vehicles you're allowed to drive and any restrictions by looking at the details on your driving licence or by checking online.
+
+Here’s how to check:
+
+1. **Go to the GOV.UK service**:  
+   Visit [www.gov.uk/view-driving-licence](https://www.gov.uk/view-driving-licence).
+
+2. **Log in securely** using:  
+   - Your driving licence number  
+   - Your National Insurance number  
+   - The postcode on your licence  
+
+3. Once logged in, you'll see:
+   - The full list of vehicle categories your licence covers (like cars, motorcycles, lorries)
+   - Start and end dates for each category  
+   - Any special codes or restrictions (e.g. if you need to wear glasses while driving)
+
+You can also see points or disqualifications (if any) in the same service.
+
+If you’re not comfortable using the online service, you can check the back of your physical licence card—it shows codes and vehicle category details. However, using the website gives clearer information.
+
+Link to start: [View or share your driving licence information - GOV.UK](https://www.gov.uk/view-driving-licence)",False,0.8333333333333333,10,13,11,,
+"I need to tax my HGV, but I don't have the vehicle log book. What should I do?","To tax your HGV without the log book (V5C), you’ll first need to get a replacement log book or use an alternative form if eligible.
+
+Here’s what you can do:
+
+1. **Check if you have a V11 reminder or a green 'new keeper' slip**  
+   - If you have a V11 (tax reminder letter) or the green slip (V5C/2) from the previous owner, you can tax the HGV online or at a Post Office that deals with vehicle tax.
+
+2. **If you don’t have any documents**  
+   - You’ll need to apply for a replacement V5C log book.  
+   - Fill in form **V62** and send it with a £25 fee to DVLA.  
+   - It may take up to 6 weeks to receive the replacement.
+
+3. **Once you have a suitable document**  
+   - Go to a Post Office that handles HGV tax, or use the online service if you’re eligible:  
+     [https://www.gov.uk/browse/driving/tax-mot-insurance](https://www.gov.uk/browse/driving/tax-mot-insurance)
+
+**Important:** HGVs may also require a valid MOT and a valid operator’s licence, and you must declare the vehicle’s weight and use.
+
+If you’re unsure which documents you have or need help with the process, contact DVLA or visit a Post Office that deals with vehicle tax.",False,0.9523809523809523,10,11,10,,
+"I need to put a skip on a public road in Wales. Do I need to get a skip licence, and what are the requirements?","Yes, you need a skip licence if you’re placing a skip on a public road in Wales.  
+
+Here’s what to do:  
+
+1. **Ask your skip hire company** – Many companies will apply for the licence on your behalf as part of the service. Check with them first.  
+2. **If you’re applying yourself**, contact your local council. Each council sets its own application process, fees, and safety rules (like reflective markings or lights on the skip).  
+3. **Apply in advance** – Do this before placing the skip on the road. Some councils require several days' notice.  
+4. **Be aware of location rules** – You usually can’t place a skip on double yellow lines, near junctions, or in parking bays.  
+5. **Licences last for a set period** – If you need the skip for longer, you may have to renew or extend the licence.  
+
+To find your local council and apply, visit: https://www.gov.uk/apply-skip-permit  
+
+If you’re placing a skip on private land (like your driveway), you usually don’t need a permit.",False,0.8695652173913044,10,13,6,,
+I'm a teacher in Scotland and I want to know if there are any special considerations for drivers over 65 years old when it comes to speed limits and penalties.,"In the UK, including Scotland, there are no separate speed limits or penalties based on age. All drivers, regardless of age, must follow the same speed limits and face the same penalties for speeding.
+
+However, here are a few points older drivers may want to keep in mind:
+
+1. **Medical fitness to drive**: From age 70, drivers must renew their driving licence every 3 years and confirm they are medically fit to drive. There is no automatic requirement before that age, unless there’s a medical condition that affects driving.
+
+2. **Speed awareness and confidence**: Some older drivers may choose to take a refresher course to stay confident and up to date with modern road rules. This is voluntary.
+
+3. **Penalty points and fines**: Speeding offences carry penalty points (usually 3 to 6) and fines, just as they do for younger drivers. Having 12 or more points within 3 years can lead to disqualification.
+
+You can find general driving guidance at: [https://www.gov.uk/browse/driving](https://www.gov.uk/browse/driving)
+
+If you’re ever unsure about health and driving, it’s best to consult your GP and check the DVLA’s medical rules.",False,0.9,9,11,6,,
+Can I apply for HGV tax online?,"Yes, you can apply for HGV (Heavy Goods Vehicle) tax online using the DVLA’s vehicle tax service.
+
+To do this, you’ll need:
+1. The vehicle log book (V5C) in your name – it must be the latest version.
+2. Or, if you’ve just bought the vehicle, the green ‘new keeper’ slip (V5C/2).
+3. A valid MOT (if the vehicle needs one).
+4. A current HGV test certificate (sometimes called a plating certificate or annual test).
+
+**Steps:**
+1. Go to the official page: [Tax your vehicle](https://www.gov.uk/vehicle-tax).
+2. Select “Start now,” then follow the instructions.
+3. Enter the reference number from your V5C or V5C/2.
+4. Pay the tax using a debit or credit card.
+
+If you run a business with multiple HGVs, you may also want to look into DVLA’s fleet services.
+
+If you’re unsure which certificate you need or can’t tax it online, contact DVLA or visit a Post Office that deals with vehicle tax.",False,0.8695652173913044,10,13,4,,
+I'm a landlord and want to install an electric vehicle chargepoint socket in my property. What steps should I take to apply for a grant and find an approved installer?,"As a landlord in England, you may be able to get a government grant to help pay for installing an electric vehicle (EV) chargepoint socket at your property.
+
+Here’s what to do:
+
+1. **Check you’re eligible**  
+You can apply if you:
+- Own the property where the chargepoint will be installed (rented homes or flats with private parking)  
+- Have private, off-street parking  
+- Use an approved installer  
+You do *not* need to own an EV yourself.
+
+2. **Choose an approved installer**  
+You must use an installer approved by the Office for Zero Emission Vehicles (OZEV). You can find a list of installers and their contact details on the GOV.UK website.
+
+3. **Get a quote and start the application**  
+The installer will help you apply for the grant. They will:
+- Check eligibility  
+- Apply on your behalf online  
+- Discount the grant amount from your final bill  
+The installer claims the grant after installation is completed.
+
+4. **How much is the grant?**  
+You can get up to 75% off the cost of installing a chargepoint, capped at £350 per socket (you can apply for up to 200 properties per year).
+
+To get started:  
+[Find out more about EV chargepoint grants for landlords on GOV.UK](https://www.gov.uk/government/publications/ev-chargepoint-grant-for-landlords-customer-guidance)
+
+If you’re unsure or need help with the application, a qualified installer can guide you through the process.",False,0.9375,15,17,4,,
+What should I consider when choosing a scrapyard to dispose of my vehicle in England?,"When choosing a scrapyard (also known as an Authorised Treatment Facility or ATF) to dispose of your vehicle in England, make sure to do the following:
+
+1. **Use an authorised facility**  
+   You must take your vehicle to a scrapyard that’s licensed as an ATF. These are approved by the Environment Agency to dismantle and recycle vehicles safely. You can check local ATFs on GOV.UK or contact your local council for a list.
+
+2. **Get a Certificate of Destruction (CoD)**  
+   The ATF should issue a CoD within 7 days of scrapping the vehicle. This is proof that you are no longer responsible for it. Always ask for this certificate and keep a copy for your records.
+
+3. **Tell DVLA your vehicle has been scrapped**  
+   You need to inform the DVLA. You can do this online or by post. If you don’t, you could be fined. Remove and keep the yellow ‘sell, transfer or part-exchange your vehicle’ slip (V5C/3) from your log book (V5C), fill it in, and post it to DVLA.
+
+4. **Remove personal belongings and documents**  
+   Before handing over your vehicle, take out anything personal and any documents—these won’t be returned.
+
+5. **Do not accept cash**  
+   It's illegal in England to be paid in cash when selling a vehicle for scrap. Your payment should be made by bank transfer or cheque.
+
+6. **Beware of rogue operators**  
+   Some people offer to collect scrap vehicles without using a licensed ATF. Only deal with registered facilities and ask to see their licence if unsure.
+
+For more official information and links, visit:  
+[https://www.gov.uk/browse/driving](https://www.gov.uk/browse/driving)",False,0.9565217391304348,11,11,12,,
+I want to rent an e-scooter for a trial in the UK. Where can I find the list of trial areas?,"You can find a list of places in the UK where e-scooter trials are running on the GOV.UK website.
+
+Visit: [https://www.gov.uk/guidance/e-scooter-trials-guidance-for-users](https://www.gov.uk/guidance/e-scooter-trials-guidance-for-users)
+
+This page includes:
+
+- A map or list of trial areas
+- How to use an e-scooter legally in a trial area
+- What rules you need to follow (for example, you must be over 16 and hold at least a provisional driving licence)
+
+Privately owned e-scooters are not allowed on public roads, pavements or cycle lanes — only rental e-scooters in approved trial areas can be used legally outside private land.
+
+If you’re unsure whether your area is included, check with your local council or the rental company operating near you.",False,0.7058823529411764,6,11,6,,
+"I want to tow a trailer with my car, but I'm not sure if I'm allowed to. How do I check what I can tow and what I need to do if I want to tow heavier combinations?","To check what you can tow and what steps to take if you want to tow heavier combinations, follow these steps:
+
+1. **Check your driving licence category**  
+   Look at the back of your driving licence for categories. If you passed your car driving test on or after 1 January 1997, you can now tow trailers up to 3,500kg maximum authorised mass (MAM) with a car, without needing to take an extra test.  
+
+2. **Check your car’s towing limits**  
+   Check your car’s manual or manufacturer’s website to find the maximum weight it can safely tow. This includes the trailer and its load.
+
+3. **Check the trailer weight**  
+   Add the weight of your trailer and whatever you're carrying. The combined weight must not exceed either the car’s towing limit or your licence allowance.
+
+4. **Make sure your trailer is roadworthy**  
+   Check lights, tyres, and brakes if fitted. It must meet legal safety standards.
+
+5. **If you need to tow more**  
+   If the combination exceeds 3,500kg MAM, you may need a different type of vehicle or a special licence. You’d need to consider a commercial or B+E licence depending on the load.
+
+You can get full details on towing rules and limits here: [https://www.gov.uk/towing-with-car](https://www.gov.uk/towing-with-car)  
+
+If you're ever unsure, it's safest to contact the DVLA or a driving instructor experienced in towing.",False,1.0,11,11,11,,
+"If I'm running a taxi service in Wales, what specific licence do I need and what are the requirements?","If you're running a taxi service in Wales, you’ll need to be licensed as either a **hackney carriage (taxi)** or a **private hire vehicle (PHV)** operator. The specific licence(s) required depend on how you intend to operate.
+
+**1. Driver’s Licence**
+You must apply for a **Taxi or Private Hire Vehicle (PHV) driver’s licence** from your local council. Requirements usually include:
+
+- Being at least 21 years old (in some areas)
+- Holding a full UK driving licence (usually for at least 12 months)
+- Passing a medical examination and criminal record (DBS) check
+- Passing a local knowledge test and/or a driving assessment
+
+**2. Vehicle Licence**
+Your taxi or PHV must be licensed by the local council. This includes:
+
+- Regular safety and mechanical checks
+- Vehicle age and emissions standards
+- Visible display of taxi/PHV plates
+
+**3. Operator’s Licence (for PHV only)**
+If you're running a private hire service (pre-booked rides), you also need a **Private Hire Operator Licence**. This covers the business organising bookings and dispatch.
+
+**Additional Points:**
+
+- Hackney carriages can pick up passengers without a booking (e.g. at taxi ranks or from the street)
+- PHVs must be pre-booked through a licensed operator — they can’t legally pick up customers from ranks or be hailed in the street
+
+Licensing is handled by your local council in Wales. Each council may have slightly different rules, so it’s important to check with them directly.
+
+You can start by visiting:  
+https://www.gov.uk/browse/driving  
+
+Then search or navigate to **""Taxi and private hire vehicle licensing""** for your local area.",False,0.0,0,21,0,,
+Can I apply for a replacement Blue Badge online and what are the requirements for doing so?,"Yes, you can apply for a replacement Blue Badge online if your badge has been lost, stolen or damaged.
+
+Here’s what you need to do:
+
+1. **Go to the official GOV.UK service** for Blue Badges: [https://www.gov.uk/browse/driving](https://www.gov.uk/browse/driving).
+2. Choose the option for “Replace a Blue Badge.”
+3. You'll be asked to confirm your details and the reason you need a replacement (for example, lost, stolen, or damaged).
+4. You may need to upload a photo and pay a small fee (usually up to £10, depending on your local council).
+5. You might also be asked to provide your previous badge number or proof of replacement need.
+
+If you cannot apply online or need help, contact your local council directly. They can support you through the process or offer a paper form if needed.",False,0.923076923076923,12,14,4,,
+"I've already registered my child's birth in the UK, but I'm unsure if I need to do anything else for their birth certificate to be valid when applying for a UK passport. What should I check?","If you’ve already registered your child’s birth in the UK, the birth certificate they received is generally valid for passport applications. However, there are a few things to check:
+
+1. **Full birth certificate** – For a UK passport, you usually need the *full (long-form)* birth certificate. This includes details of the parents. The short version (that only shows the baby’s name, sex, and date of birth) is not accepted for first passport applications.
+
+2. **Parental details for nationality** – The birth certificate must show at least one parent who was a British citizen or settled in the UK at the time of the birth. This proves your child’s British nationality. If this doesn’t apply, you may need to provide extra documents (such as a parent’s passport or settled status confirmation).
+
+3. **Correct spelling and details** – Make sure the names, dates, and birth details are correct and match any other documents you’ll use in the passport application.
+
+If the certificate is full and accurate, and you have proof of the parent’s nationality or immigration status if needed, you can use it to apply for your child’s first UK passport.
+
+You can check which documents are required using the official passport guidance on GOV.UK:  
+https://www.gov.uk/apply-first-child-passport
+
+If you're unsure whether your certificate meets the requirements, contact the Passport Advice Line for help.",False,0.9565217391304348,11,12,4,,
+I got my driving licence revoked because I didn't give it to the court. How do I get a new one and what forms do I need to fill out?,"If your driving licence was revoked because you didn’t give it to the court, you’ll need to apply for a new one through the Driver and Vehicle Licensing Agency (DVLA).
+
+Here’s what you need to do:
+
+1. **Check if you’re allowed to drive again**  
+   Make sure the court’s ban or disqualification period is over. If you're not sure, contact the court that handled your case or check your driving record at: https://www.gov.uk/view-driving-licence
+
+2. **Fill in a D1 form (application for a driving licence)**  
+   - You can get this form from a Post Office that deals with DVLA forms.  
+   - Or you can order it online from the DVLA.
+
+3. **Send the D1 form to DVLA with any requested documents**  
+   - You may be asked to send proof of your identity (like a passport).  
+   - Include a passport-style photo if needed.  
+   - There may be a fee to replace your licence.
+
+4. **Post everything to DVLA**  
+   The form will tell you the correct DVLA address.
+
+DVLA will check your application and driving record. They may also do extra checks depending on why your licence was revoked.
+
+You can find more information or order the form here: https://www.gov.uk/browse/driving
+
+If you're unsure about anything, it’s safest to contact DVLA or speak to someone at the Post Office when you pick up the form.",False,0.9285714285714286,13,15,7,,
+I own a classic car that I've had for many years and I want to stop paying vehicle tax. What steps do I need to take to apply for the exemption and confirm if I'm eligible?,"You may be able to stop paying vehicle tax if your classic car is eligible for ‘historic vehicle’ tax exemption.
+
+Here are the steps to apply:
+
+1. **Check if your vehicle is eligible**  
+Your vehicle must be at least 40 years old on 1 January of the current year to qualify. For example, to get exemption from 1 April 2026, the vehicle must have been built before 1 January 1986.
+
+2. **Wait until the exemption year starts**  
+You can apply to stop paying vehicle tax from 1 April in the year your vehicle becomes eligible.
+
+3. **Apply at a Post Office that deals with vehicle tax**  
+Bring these documents:
+   - The vehicle log book (V5C) in your name
+   - MOT certificate (if applicable)
+   - A completed V10 form (application for vehicle tax)
+   - Proof of insurance
+
+   You’ll also need to declare the vehicle as a historic vehicle to update its tax class.
+
+4. **Update your vehicle’s tax class**  
+The Post Office will send your log book to DVLA to update the tax class to ‘historic’. You’ll get a new log book by post.
+
+5. **Keep your vehicle taxed and MOT compliant (if required) until the exemption applies**  
+Once approved, your vehicle will be tax exempt, but you may still need to renew its tax each year (showing £0 due) and meet MOT rules unless it’s also MOT exempt.
+
+You can find more details or check eligibility at: [https://www.gov.uk/vehicle-tax-exemptions](https://www.gov.uk/vehicle-tax-exemptions)",False,0.09523809523809523,1,14,7,,
+Can I deliver Driver CPC training remotely using video calls?,"Yes, Driver CPC training can be delivered remotely, but it must meet certain rules set by the Driver and Vehicle Standards Agency (DVSA).
+
+You can run approved Driver CPC courses online using video conferencing (like Zoom or Microsoft Teams), but only if DVSA has approved the course for remote delivery.
+
+To deliver training remotely:
+
+1. You must be an approved Driver CPC training centre.
+2. The course must be officially approved for remote delivery by DVSA.
+3. You must use a secure video platform with the ability to monitor attendance and participation.
+4. Trainers need to check ID and be able to interact with drivers throughout the session.
+5. You must keep clear records and follow all normal course and trainer requirements.
+
+If you're planning to start running remote Driver CPC training, check GOV.UK for the latest training centre approval requirements:  
+[https://www.gov.uk/browse/driving](https://www.gov.uk/browse/driving)
+
+If unsure, contact DVSA’s Driver CPC team for advice before starting the course.",False,0.9523809523809523,10,11,7,,
+I operate a removal company in Scotland and need to know about permits for moving household goods internationally.,"If you run a removal company in Scotland and transport household goods internationally (for example, between the UK and the EU), there are specific permits and rules you must follow.
+
+1. **Operator licence**: You’ll need a standard international operator licence to carry goods for hire or reward across international borders. You can apply through the Traffic Commissioner in your area.  
+
+2. **ECMT permits**: If you plan to move goods between the UK and certain non-EU countries, you may also need an ECMT (European Conference of Ministers of Transport) permit.
+
+3. **UK Licence for the Community**: This is required for journeys between the UK and EU, or within EU countries. You must carry a copy in each vehicle.
+
+4. **Vehicle documentation**: Make sure each lorry has its vehicle log book (V5C), motor insurance green card (if required), and evidence of roadworthiness (like MOT).
+
+5. **Driver documents**: Drivers must carry a valid driving licence, passport, Certificate of Professional Competence (CPC), and any necessary visas.
+
+6. **Customs requirements**: You or the customer may need to make customs declarations for household goods. Consider using a customs agent or freight forwarder to handle this.
+
+7. **Goods Movement Reference (GMR)**: For moving through border locations under the Goods Vehicle Movement Service (GVMS), you may need a GMR to board ferries or Eurotunnel services.
+
+You can find full guidance and apply for the relevant licences on GOV.UK:  
+[https://www.gov.uk/browse/driving](https://www.gov.uk/browse/driving)
+
+If unsure which permits apply to your specific routes, it’s safest to contact the DVSA or get professional advice from a transport manager or trade body like the RHA (Road Haulage Association).",False,0.058823529411764705,1,19,15,,
+I'm planning to learn to drive a car in Wales. What are the steps I need to follow to get my provisional licence and eventually pass my driving test?,"To learn to drive a car in Wales, here are the steps you need to follow:
+
+**1. Apply for a provisional driving licence**  
+You must be at least 15 years and 9 months old, but you can only drive a car from age 17.  
+Apply online through GOV.UK or by post using a D1 form from a Post Office.  
+You’ll need:  
+- proof of identity (like a passport)  
+- your address history for the last 3 years  
+- to pay a fee (usually around £34 online)  
+
+Apply online here:  
+[https://www.gov.uk/apply-first-provisional-driving-licence](https://www.gov.uk/apply-first-provisional-driving-licence)
+
+**2. Start driving lessons**  
+You can begin driving on public roads once you have your provisional licence and are 17.  
+You must be supervised by:  
+- a qualified driving instructor, or  
+- someone over 21 who’s had a full driving licence for 3 years or more  
+
+The car must display L plates and be properly insured.
+
+**3. Take the theory test**  
+Book your test online after some practice. It includes multiple-choice questions and a hazard perception test.
+
+Details and booking:  
+[https://www.gov.uk/book-theory-test](https://www.gov.uk/book-theory-test)
+
+**4. Take professional driving lessons**  
+Lessons with a DVSA-approved instructor will help you learn road safety, manoeuvres and prepare for your test. There’s no set number of hours, but most learners take around 40-50 hours with an instructor plus private practice.
+
+**5. Book and take the practical driving test**  
+Once you pass your theory test and your instructor agrees you’re ready, book your practical test.
+
+Book here:  
+[https://www.gov.uk/book-driving-test](https://www.gov.uk/book-driving-test)
+
+The test includes:  
+- vehicle safety questions (“show me, tell me”)  
+- general driving  
+- reversing exercises  
+- possibly independent driving using a sat nav or road signs
+
+**6. After passing**  
+You can start driving immediately. Your full licence will be sent automatically if you applied for your provisional online.
+
+For everything in one place, including fees, applications and test centres, visit:  
+[https://www.gov.uk/browse/driving](https://www.gov.uk/browse/driving)",False,0.8571428571428571,12,16,5,,
+What happens if I get a penalty point for drink-driving?,"If you’re caught drink-driving, it's more serious than just getting penalty points — it’s a criminal offence.
+
+Here’s what can happen:
+
+1. **You’ll likely be banned from driving** for at least 12 months.
+2. **You’ll get a fine or could be sent to prison**, depending on how serious the offence was.
+3. **You will get a criminal record**.
+4. **You’ll get between 3 and 11 penalty points** on your driving licence.
+5. If you’re under 17 or don’t have a full licence yet, **your provisional licence can be cancelled**, and the ban starts when you would’ve been legally allowed to drive.
+
+Drink-driving also makes car insurance more expensive later on and can affect job opportunities.
+
+You can find official information and penalties explained on GOV.UK:  
+[https://www.gov.uk/browse/driving](https://www.gov.uk/browse/driving)  
+
+If you're unsure about anything, it's safest to speak to a legal advisor or visit a local Citizens Advice service.",False,0.10526315789473684,1,13,6,,
+I'm looking to find a reliable lorry or bus operator in Scotland. How do I search for one using the official website?,"You can search for a reliable lorry or bus operator licensed to operate in Scotland using the official vehicle operator licence search tool.
+
+To do this:
+
+1. Go to the GOV.UK website: https://www.gov.uk/browse/driving  
+2. In the search bar, type “find a vehicle operator licence” and select the correct result, or go directly to the search page at: https://www.gov.uk/find-vehicle-operators  
+3. Choose the type of operator you're looking for (goods vehicles for lorries, or public service vehicles for buses).
+4. Use the filters to narrow by area — for Scotland, select “Traffic Area: Scotland”.
+5. You can search by operator name, licence number, postcode, or simply browse all licensed operators in the area.
+
+This database shows if the operator holds a valid licence from the Traffic Commissioner and includes details such as their operating centre and authorised vehicles.
+
+For safety and reliability, you may want to check that the operator’s licence is current and hasn’t been suspended or revoked.",False,0.9655172413793104,14,15,3,,
+Can I use the government tool to find out if I'm allowed to tow a trailer with my car?,"Yes, you can use the GOV.UK tool to check if you're allowed to tow a trailer with your car.
+
+Here’s how:
+
+1. Go to the GOV.UK website: [https://www.gov.uk/browse/driving](https://www.gov.uk/browse/driving)
+2. Search for “check if you can tow a trailer” or go directly to the towing rules section.
+3. Enter your driving licence details (mainly the date you passed your car driving test).
+4. The tool will tell you what you’re legally allowed to tow based on your licence.
+
+The rules depend on when you passed your driving test. For example, people who passed before or after 1 January 1997 may have different towing entitlements.
+
+If you're unsure about the result, you can also check the back of your driving licence — the categories and codes there show what you're allowed to drive and tow.",False,0.8571428571428571,9,12,3,,
+"I want to tow a caravan with my car, but I'm not sure what safety checks I need to do. What steps should I take to make sure I'm doing it safely and legally?","To tow a caravan safely and legally in the UK, there are a number of checks and preparations you should make.
+
+### 1. Check your driving licence
+- If you passed your car driving test on or after 1 January 1997, you can now tow a trailer up to 3,500kg maximum authorised mass (MAM) with a car.
+- Check your licence details at: https://www.gov.uk/view-driving-licence
+
+### 2. Know your car and caravan limits
+- Look up your car’s maximum towing weight in the handbook or with the manufacturer.
+- Make sure the caravan’s weight (including contents) does not exceed your car’s towing capacity.
+
+### 3. Use the right tow bar and electrics
+- Your tow bar must be ‘type approved’ and fitted correctly.
+- You’ll also need working electrical connections to power the caravan’s lights and indicators.
+
+### 4. Do essential safety checks before every journey
+- **Tyres** – check pressure, condition and tread depth on both the car and caravan.
+- **Lights** – test all caravan lights and indicators.
+- **Brakes** – make sure the caravan braking system (if fitted) is working.
+- **Breakaway cable** – ensure it’s attached correctly to car and caravan.
+- **Mirrors** – fit suitable towing mirrors if your view of the road is blocked.
+- **Load** – pack your caravan evenly and avoid exceeding the maximum load.
+
+### 5. Drive carefully
+- Stick to lower speed limits when towing: 60mph on motorways and 50mph on single carriageways.
+- You must not use the right-hand lane of a motorway with three or more lanes when towing.
+- Take wider turns and be aware of wind or passing lorries which may affect stability.
+
+You can find more detailed advice under “Towing with a car” on the GOV.UK driving section:  
+[https://www.gov.uk/browse/driving](https://www.gov.uk/browse/driving)
+
+If you're unsure about safe loading or towing weights, it’s a good idea to get your caravan weighed or speak to a towing specialist.",False,0.2105263157894737,4,20,18,,
+"I need to change my instructor theory test date, but I only found out about the change two days before the test. What should I do?","If your instructor theory test is within 3 working days and you need to change it, you won’t be able to do it online. But you can still try to reschedule by contacting the Driver and Vehicle Standards Agency (DVSA) directly.
+
+Here’s what to do:
+
+1. **Call the DVSA theory test bookings team as soon as possible** on 0300 200 1122 (Monday to Friday, 8am to 4pm). They may allow a short-notice change in certain situations.
+
+2. Explain your reason clearly. You may be asked to provide evidence if the change is due to illness or an emergency.
+
+3. If it’s too late to change or cancel, and you don’t attend, you may lose your test fee.
+
+4. If your reason is accepted (for example, a medical emergency or serious issue), DVSA may rearrange the test without charging you again.
+
+If you're not sure, call them right away — even short notice is better than missing the chance to explain the problem.
+
+For more info on instructor theory tests:  
+[https://www.gov.uk/browse/driving](https://www.gov.uk/browse/driving)",False,1.0,12,12,7,,
+I have a medical condition that makes it hard to drive safely. How do I let the DVLA know and what happens next?,"If you have a medical condition that affects your ability to drive safely, you must tell the Driver and Vehicle Licensing Agency (DVLA) as soon as possible. 
+
+Here’s what to do:
+
+1. **Check if you need to report it** — Visit the GOV.UK page on medical conditions and driving to check if your specific condition must be reported: https://www.gov.uk/health-conditions-and-driving  
+2. **Fill in the right form** — Each condition has its own DVLA form. You can usually download the form or request one by phone.
+3. **Send the form to DVLA** — Post the completed form to the address shown on it. You can also write to DVLA if you're unsure which form to use.
+
+What happens next:
+- DVLA may contact your doctor or ask you to take a medical exam.
+- They may decide that you can keep your licence, need to give it up, or can drive with conditions (like shorter licence renewal times).
+
+You must stop driving if your doctor tells you to stop or while DVLA is considering your case.
+
+For more information or help, go to: https://www.gov.uk/browse/driving or contact DVLA directly by phone.",False,0.7777777777777778,7,9,9,,
+I lost my Blue Badge and need to get a replacement. How do I apply for a new one and what details do I need to provide?,"To get a replacement Blue Badge in Scotland if yours is lost, you’ll need to contact your local council — they issue and replace badges.
+
+Follow these steps:
+
+1. **Contact your local council**: You can find their contact details on GOV.UK using your postcode: https://www.gov.uk/browse/driving
+
+2. **Explain what happened**: Tell them your Blue Badge has been lost and you need a replacement.
+
+3. **Provide key details**: The council may ask for your:
+   - Full name and address  
+   - Date of birth  
+   - Badge number (if you have it)  
+   - National Insurance number  
+   - A form of ID and a photo (depending on your council’s rules)
+
+4. **Pay the replacement fee**: Most councils charge up to £20 for a replacement badge.
+
+The council will tell you how to apply — some offer online forms, others may need a paper application.
+
+If you're not sure who to contact, or need help filling in a form, you can also call your local council directly or visit their offices.",False,0.9696969696969697,16,17,2,,
+I want to build a vehicle and have it approved for use in the UK. What do I need to do?,"To use a vehicle you’ve built on public roads in the UK, you must make sure it’s legally approved and registered. Here's what you need to do:
+
+1. **Check if you need an Individual Vehicle Approval (IVA):**  
+   Most kit-built, rebuilt or radically altered vehicles need to pass an IVA test to show they meet safety and environmental standards. This applies to most types of self-built cars, vans, and other vehicles.  
+   More info: [Individual Vehicle Approval](https://www.gov.uk/vehicle-approval/individual-vehicle-approval)
+
+2. **Apply for the IVA test:**  
+   Apply through the Driver and Vehicle Standards Agency (DVSA). You'll need to provide detailed information about the vehicle, including build specifications and parts used.
+
+3. **Prepare your vehicle for inspection:**  
+   The vehicle must be complete and safe enough to be driven for its test. It will be checked to ensure it meets the required legal and safety standards.
+
+4. **Pass the IVA test:**  
+   Once your vehicle passes the test, you’ll receive a certificate of approval.
+
+5. **Register the vehicle with DVLA:**  
+   After IVA, you must apply to register the vehicle with the DVLA. Send in:
+   - The IVA certificate  
+   - Completed registration forms (you may need a V55/5)  
+   - Evidence of vehicle identity and build  
+   - Proof of address and ID  
+   - The correct fee and road tax if applicable  
+
+6. **Get number plates and insurance:**  
+   Once registered, you'll be issued a registration number. You can then get number plates made and insure your vehicle before using it on the road.
+
+You can find full details and forms on the GOV.UK driving page:  
+[https://www.gov.uk/browse/driving](https://www.gov.uk/browse/driving)
+
+If your vehicle is very unusual or you’re unsure which approval scheme applies, contact DVSA for advice before starting the build.",False,1.0,13,13,3,,
+How do I book my theory test after passing my practical test?,"You only need to pass the theory test *before* taking the practical driving test. If you’ve already passed your practical test, your theory test should be done and you don’t need to take it again—unless it has expired or you're applying for a different type of licence (like motorcycle or lorry).
+
+If you meant something else, such as needing a theory test for a different vehicle type, could you tell me which type of licence you're applying for?
+
+You can check licence rules at: [https://www.gov.uk/browse/driving](https://www.gov.uk/browse/driving)",False,0.16666666666666666,1,8,4,,
+I'm planning to start a business transporting goods and need to operate sooner than the standard licence processing time. What options are available to me?,"If you need to start transporting goods before your goods vehicle operator licence is fully processed, you may be able to request an *interim licence*.
+
+An interim licence gives you temporary permission to operate while your full application is being considered. It’s most often granted for standard national or international licences, but is not guaranteed.
+
+**To apply for an interim licence:**
+
+1. Submit your full operator licence application via the Vehicle Operator Licensing (VOL) online system.
+2. At the same time, request the interim licence by ticking the relevant box in your application and providing reasons why early permission is needed (for example, business contracts or urgent deadlines).
+3. Include all required documents and fees. Missing paperwork can delay or prevent interim approval.
+4. Make sure your operating centre and vehicle maintenance arrangements meet the requirements from the start.
+
+The Traffic Commissioner will decide whether to grant the interim licence based on urgency, compliance, and risk.
+
+You can find more guidance and start the process here:  
+[Apply for a goods vehicle operator licence](https://www.gov.uk/being-a-goods-vehicle-operator)
+
+If you're unsure what licence type you need, or how to structure your request, you may want to get advice from a transport solicitor or industry body.",False,0.9473684210526316,9,10,6,,
+I want to tow a caravan with my car. What are the safety checks I need to do before I start towing?,"Before towing a caravan with your car, it’s important to follow some key safety checks:
+
+1. **Check your driving licence** – Make sure you’re allowed to tow with your car. Most people with a full car licence can tow a small trailer or caravan, but limits can vary depending on when you passed your test.
+
+2. **Match the right weights** – Your car must be legally allowed to tow your caravan. Check:
+   - The car’s **towing limit** in your manual or V5C logbook.
+   - The **Maximum Authorised Mass (MAM)** of the caravan.
+   - Your caravan’s MAM should not exceed your car’s towing limit.
+
+3. **Check the towing equipment** – Make sure:
+   - You have a **proper tow bar** that’s approved and correctly fitted.
+   - The **electrical connections** work for things like lights and indicators on the caravan.
+
+4. **Do a full walkaround check** – Before moving off:
+   - Tyres on both the car and caravan are at the correct pressure and not damaged.
+   - All **lights and indicators** work.
+   - The coupling is secure and the **breakaway cable** is properly attached.
+   - The caravan load is **balanced and secured** inside.
+   - Towing mirrors are fitted if your caravan is wider than your view through the car’s mirrors.
+
+5. **Check the number plate** – The caravan must show the same registration number as your car, and the plate must be easily visible.
+
+6. **Know the speed limits for towing** – Usually 60mph on motorways and dual carriageways, 50mph on single carriage roads (unless signs say otherwise).
+
+You can read more in towing guidance on GOV.UK: https://www.gov.uk/browse/driving
+
+If you're unsure whether your car is suitable or what your limits are, ask a towing expert or dealer for help before setting off.",False,0.8275862068965517,12,13,16,,
+I need to apply for a replacement certificate for my coach or bus. What information should I include in my application?,"To apply for a replacement vehicle certificate (such as an MOT, Certificate of Initial Fitness, or Certificate of Conformity) for a coach or bus, you need to contact the Driver and Vehicle Standards Agency (DVSA). Here's what to include in your application:
+
+1. **Your full name and contact details** – including address and phone number.  
+2. **Vehicle details** – registration number, chassis number (VIN), and make/model.  
+3. **Type of certificate** you need to replace – for example, Certificate of Initial Fitness (COIF).  
+4. **Reason for replacement** – such as lost, damaged, or stolen.  
+5. Any **supporting documents**, if required (like proof of ownership or a copy of the lost certificate if available).  
+
+You may be asked to pay a fee and provide identification. It’s best to contact DVSA directly to confirm exactly what’s needed for your case.
+
+More information is available through: [https://www.gov.uk/browse/driving](https://www.gov.uk/browse/driving)
+
+If you're unsure which certificate you’re replacing, or where to send the request, you can call or email DVSA for help.",False,0.9,9,11,6,,
+Can I renew my ADI registration if my previous one expired more than 12 months ago?,"If your Approved Driving Instructor (ADI) registration expired more than 12 months ago, you cannot renew it. You’ll need to start the ADI qualification process again.
+
+This means:
+
+1. Apply to join the ADI register again through the Driver and Vehicle Standards Agency (DVSA).
+2. Pass a new DBS (Disclosure and Barring Service) check.
+3. Pass the three ADI qualification tests (theory, driving ability, and instructional ability).
+
+You can find full guidance and how to apply on GOV.UK:  
+[https://www.gov.uk/browse/driving](https://www.gov.uk/browse/driving)
+
+If you're unsure how to get started, it may help to contact DVSA or speak with a local instructor trainer for support.",False,0.8421052631578948,8,11,1,,
+I need to apply for Individual Vehicle Approval (IVA) for my van. What steps should I follow to complete the application process?,"To apply for Individual Vehicle Approval (IVA) for your van, follow these steps:
+
+1. **Check if you need IVA**  
+   IVA is usually needed for imported or altered vehicles, or those built in very small numbers, to prove they meet UK safety and environmental standards.
+
+2. **Choose the correct IVA type**  
+   For a van, this is likely the ‘N1’ category (light goods vehicles). There are two types of IVA:  
+   - *Basic IVA*: for vans already made to EU standards.  
+   - *Normal IVA*: needed if your van does not meet EU type approval.
+
+3. **Prepare your vehicle**  
+   Make sure your van is complete and roadworthy. It will be inspected during the test.
+
+4. **Gather your documents**  
+   You’ll usually need:  
+   - proof of identity  
+   - details of the vehicle  
+   - evidence of emissions  
+   - any modifications or conversion details  
+   - the vehicle’s original paperwork (if imported)
+
+5. **Apply for the IVA test**  
+   You can apply online or by post. The easiest way is online:
+   [Apply for Individual Vehicle Approval (IVA)](https://www.gov.uk/vehicle-approval)
+
+6. **Pay the fee**  
+   The cost depends on the type of IVA you need. For most vans, it’s around £199 for a normal IVA test. Fees are listed on the GOV.UK site.
+
+7. **Attend the IVA test**  
+   You’ll be given a test date at a Driver and Vehicle Standards Agency (DVSA) site. Take all your documents with you.
+
+8. **Receive the result**  
+   - If your van passes, you’ll get an IVA certificate (needed to register the vehicle).  
+   - If it fails, you’ll be told what needs fixing before you can retest.
+
+If you're unsure which category your van falls into or need help completing the forms, you can call the DVSA or ask someone to help you navigate the online system.
+
+For more details, go to: [https://www.gov.uk/vehicle-approval](https://www.gov.uk/vehicle-approval)",False,1.0,14,14,7,,
+What happens if my driving instructor registration is suspended and I'm not removed from the register?,"If your approved driving instructor (ADI) registration is suspended but you're not removed from the register, it means you're still officially registered but you're not allowed to give paid driving lessons until the suspension is lifted.
+
+During this time:
+- You must stop all instruction work straight away.
+- You cannot advertise or promote yourself as a driving instructor.
+- The suspension will stay in place until the Driver and Vehicle Standards Agency (DVSA) says you can start again.
+
+You’ll be told in writing why you’ve been suspended and what you need to do. The DVSA might carry out a check test or investigate further before making a decision to lift the suspension or possibly remove you from the register.
+
+If you're unsure why you've been suspended or what steps to take, contact the DVSA as soon as possible or visit [GOV.UK's driving instructor guidance](https://www.gov.uk/browse/driving).",False,0.7500000000000001,9,13,11,,
+I'm planning to modify my car's engine and want to know if I need to update my V5C registration certificate. What are the steps involved?,"Yes, if you modify your car’s engine in a way that changes its size, type, or fuel type, you need to update your V5C registration certificate.
+
+Here’s how to do it:
+
+1. **Write the changes on section 1** of your V5C (log book) – for example, if you've installed a different engine or changed the fuel from petrol to LPG.
+
+2. Send the completed V5C to:
+   DVLA  
+   Swansea  
+   SA99 1BA
+
+3. If the new engine is from a different vehicle, **include evidence** such as:
+   - A receipt for the engine  
+   - Written confirmation from the manufacturer or garage  
+   - A report from an independent engineer
+
+4. If the engine change affects your vehicle’s tax class or emissions, you may also need to update your vehicle tax and insurance.
+
+The DVLA might contact you for more details or carry out checks.
+
+For more information, visit: [https://www.gov.uk/browse/driving](https://www.gov.uk/browse/driving)",False,0.8571428571428572,9,10,11,,
+I just bought a new car and I'm confused about the vehicle tax payment. How often do I have to pay it and what happens if I don't pay on time?,"You must tax your vehicle when you buy it, even if the previous owner had already paid. Vehicle tax does not transfer with the car.
+
+**How often you pay:**
+You can pay vehicle tax:
+- Every 12 months
+- Every 6 months
+- Monthly by Direct Debit
+
+You can set this up when you tax the car online, by phone or at a Post Office that deals with vehicle tax.
+
+**If you don’t pay on time:**
+- You can be fined £80, which may be reduced to £40 if you pay within 28 days.
+- If the car is used or parked on the road without tax, you can face a fine of up to £1,000.
+- Your car could be clamped or taken away.
+
+To stay up to date, you can check and renew your vehicle tax here: [https://www.gov.uk/browse/driving](https://www.gov.uk/browse/driving)
+
+If you’re not keeping the car on the road (for example, it’s stored in a garage), you must register it as off road with a SORN (Statutory Off Road Notification).",False,0.888888888888889,12,15,9,,
+What should I do if I need to apply for an Accessibility Certificate for my bus to carry disabled passengers?,"If you operate a bus or coach and want to carry disabled passengers, your vehicle must meet accessibility standards under the Public Service Vehicles Accessibility Regulations (PSVAR).
+
+To apply for an Accessibility Certificate:
+
+1. **Check your vehicle** – Make sure it meets the design and equipment standards required for accessibility (such as wheelchair access, low floors, handrails, visual and audible announcements).
+
+2. **Get the vehicle tested** – Contact the Driver and Vehicle Standards Agency (DVSA) to book a PSV accessibility inspection (this may be done at the same time as a normal annual test, or separately).
+
+3. **Submit an application** – If your vehicle passes inspection, the DVSA or relevant authority will issue an Accessibility Certificate (sometimes noted on the vehicle’s certificate of conformity).
+
+4. **Keep records** – You must hold a valid Accessibility Certificate when operating services that require one (such as registered local bus services or home-to-school transport contracts).
+
+If you're unsure whether your vehicle needs a certificate or how to get tested in Wales, contact DVSA or check with your local Traffic Commissioner’s office.
+
+More information is available here: [https://www.gov.uk/browse/driving](https://www.gov.uk/browse/driving)",False,0.875,7,8,8,,
+I need to find a driving test centre near me in Scotland. How do I use my postcode to locate the nearest one and what information should I look for?,"To find a driving test centre near you in Scotland using your postcode, follow these steps:
+
+1. Go to the official government website: [Find a driving test centre](https://www.gov.uk/find-driving-test-centre).
+2. Enter your postcode in the search box.
+3. Click “Search” to see a list of nearby test centres.
+
+When looking at each test centre, check:
+- The full address of the centre.
+- Directions and parking details (if available).
+- Facilities (some may not have toilets or waiting areas).
+- Availability of test dates—some centres may have longer waiting times.
+
+You’ll also need your UK driving licence number when booking a test.
+
+If you have trouble online, you can ask someone you trust to help, or contact the DVSA (Driver and Vehicle Standards Agency) for support.",False,1.0,12,12,8,,
+How can I find out if my local council offers any subsidised transport options for students aged 16 to 19?,"To find out if your local council offers subsidised transport for students aged 16 to 19:
+
+1. Go to your local council’s website and search for “school transport” or “16 to 19 travel support”.
+2. Look for any schemes aimed at students in further education, such as reduced bus fares, travel passes, or mileage payments.
+3. If the website doesn’t have clear information, contact the council directly. Ask for the school or education transport team.
+4. You can also speak to the college or school the student attends — they often know about local travel help or bursary support.
+
+In Scotland, young people aged 5 to 21 are eligible for free bus travel with a National Entitlement Card (NEC). Find out more and apply through your local council or on the Young Scot website.
+
+If you aren't sure how to contact your council, you can find their details by entering your postcode here: https://www.gov.uk/find-local-council",False,0.4761904761904762,5,9,12,,
+"I'm 17 and want to ride a motorcycle. Do I need to take CBT first, and if so, what are the rules around riding after completing it?","Yes, at 17 you need to take Compulsory Basic Training (CBT) before riding most motorcycles on public roads.
+
+Here’s how it works:
+
+1. **Take CBT first** – This is a one-day course that covers basic motorcycle control and road safety. Once you pass, you’ll get a CBT certificate (DL196), which is valid for 2 years.
+
+2. **What you can ride after CBT** – At 17, you can ride a motorcycle up to 125cc with a maximum power output of 11kW. You must use L plates (or D plates in Scotland) and cannot carry passengers or go on motorways.
+
+3. **What comes next** – If you want to ride without L plates or progress to larger bikes, you’ll need to pass the full motorcycle licence tests (theory test, Module 1 and Module 2 practical tests).
+
+4. **Renewing CBT** – If you don’t move on to a full licence within 2 years, you’ll need to retake CBT to keep riding legally.
+
+For more details and how to book CBT near you, visit: [https://www.gov.uk/browse/driving](https://www.gov.uk/browse/driving)",False,1.0,11,11,3,,
+I am planning to ride my motorcycle with a visor. Are there specific regulations about what type of visor or goggles I can use?,"Yes, there are specific regulations for motorcycle visors and goggles in the UK.
+
+Visors, goggles, and sunglasses used while riding a motorcycle must:
+
+1. Meet a British Standard (BS EN 1938 for goggles or BS 4110 for visors), or
+2. Meet a European standard that ensures they give proper visibility and safety.
+
+You should only use visors or goggles that are marked as meeting one of these safety standards. Tinted visors are allowed but must let through sufficient light – dark visors may not be legal in poor visibility or at night.
+
+Your visor or goggles must also be clean and undamaged to avoid affecting your vision.
+
+You can find more guidance on safe riding equipment at: https://www.gov.uk/browse/driving
+
+For full details, check with a reputable motorcycle gear retailer or visit GOV.UK's motorcycle safety equipment guidance.",False,0.888888888888889,8,10,5,,
+I want to ride an e-scooter in the UK. Do I need a special licence and what are the requirements?,"In England, it’s illegal to ride a privately owned e-scooter on public roads, pavements, or cycle lanes. You can only use them on private land with the landowner’s permission.
+
+You’re allowed to ride an e-scooter on public roads only if it’s part of a government-approved rental trial in certain areas.
+
+To ride a rental e-scooter legally, you must:
+
+1. Be at least 18 years old.
+2. Hold a full or provisional driving licence with category Q entitlement (this comes with most licences if you're allowed to drive mopeds or cars).
+3. Follow the rules of the road — for example, no riding on pavements and obeying traffic lights.
+4. Wear a helmet for safety (not legally required but strongly advised).
+
+You don’t need a special e-scooter licence, but your driving licence must include the right category.
+
+Check details about driving licences and transport rules at [GOV.UK Driving and Transport](https://www.gov.uk/browse/driving).",False,0.8181818181818181,9,13,2,,
+I am currently a teacher in Wales and want to start teaching people to drive motorcycles. What qualifications and steps do I need to take?,"To teach people to ride motorcycles in the UK, including Wales, you must become a certified motorcycle instructor through the Driver and Vehicle Standards Agency (DVSA). There are several types of motorcycle instructors depending on the training you want to provide — for example, Compulsory Basic Training (CBT) or direct access.
+
+Here are the steps to get started:
+
+1. **Have the right motorcycle licence**  
+   You need to hold a full category A motorcycle licence for at least 3 years.
+
+2. **Apply to become an Instructor**  
+   - For **CBT (Compulsory Basic Training)**, you must apply to become an **authorised CBT instructor**.  
+   - You’ll need to pass a **CBT instructor assessment**, which includes classroom and on-road instruction skills.
+
+3. **Work with an Approved Training Body (ATB)**  
+   You must be linked to an ATB, which is a DVSA-approved training school allowed to run motorcycle training. They usually sponsor your application and may help with training before assessment.
+
+4. **Pass a DVSA Instructor Assessment**  
+   - This tests your knowledge, riding ability, and teaching skills.  
+   - If successful, you can begin training learners under supervision, then progress to unsupervised instruction.
+
+5. **Upgrade if needed**  
+   If you want to deliver Direct Access Scheme (DAS) training (for larger motorcycles), there are higher-level assessments you must pass after gaining experience as a CBT instructor.
+
+You can find more information or apply via GOV.UK here:  
+[https://www.gov.uk/become-motorcycle-instructor](https://www.gov.uk/become-motorcycle-instructor)
+
+If unsure where to begin, contact a local Approved Training Body in Wales — they can guide you through the process and may offer training or sponsorship.",False,0.9333333333333333,14,16,3,,
+"I want to register as a Pass Plus approved driving instructor, but I'm not sure where to find my user ID from the DVSA. How do I locate it and what do I need to complete the registration?","To register as a Pass Plus approved driving instructor, you’ll need your DVSA ADI (Approved Driving Instructor) user ID. This is usually on any official letters or emails the DVSA has sent you — especially about your ADI registration or renewal.
+
+If you can’t find your user ID:
+
+1. Contact the DVSA using the contact details for ADI services (found on GOV.UK) and ask them to confirm your user ID.
+2. You may need to give them your ADI number, personal details, or your driving licence number to verify your identity.
+
+To complete the Pass Plus registration, you’ll need:
+
+- Your DVSA ADI user ID  
+- Your ADI number  
+- Your contact details  
+- Agreement to the terms for delivering the Pass Plus scheme  
+
+Once you have this information, you can apply using the form or contact method set out on the official GOV.UK page for Pass Plus instructors.
+
+You can find more guidance through the driving section on GOV.UK:  
+[https://www.gov.uk/browse/driving](https://www.gov.uk/browse/driving)
+
+If you're unsure or stuck, it’s best to phone or email the DVSA's ADI support team directly.",False,0.761904761904762,8,11,10,,
+I manage a transport business in Wales and need to apply for a Certificate of Initial Fitness for a new bus. What steps should I follow to ensure the application is processed correctly?,"To apply for a Certificate of Initial Fitness (CoIF) for a new bus in Wales, you’ll need to follow these steps:
+
+1. **Check vehicle eligibility**  
+   Make sure the bus meets GB Type Approval standards or an acceptable equivalent (such as ECWVTA or IVA). This confirms it’s built to the correct safety and environmental standards.
+
+2. **Contact the Driver and Vehicle Standards Agency (DVSA)**  
+   You can apply for a CoIF through the DVSA. They’ll arrange an inspection of the bus and provide the necessary forms:
+   - Call DVSA on 0300 123 9000 to request the application form (VTP6).
+
+3. **Prepare the vehicle for inspection**  
+   The bus must be fully completed and road-ready. It will need to:
+   - Comply with safety regulations
+   - Meet accessibility requirements (if it will carry passengers under a public service vehicle licence)
+
+4. **Submit the application with required documents**  
+   Return the completed form, along with:
+   - Technical specifications
+   - Copies of approval documentation
+   - Payment for the inspection fee (amount depends on the vehicle type)
+
+5. **Attend the DVSA inspection**  
+   An examiner will check the vehicle for compliance. If it passes, you’ll be issued a Certificate of Initial Fitness.
+
+6. **Keep the certificate with the vehicle**  
+   The CoIF must be kept with the vehicle, especially if used under a Public Service Vehicle (PSV) operator’s licence.
+
+If you need more detail or to download forms, contact the DVSA or visit: https://www.gov.uk/browse/driving
+
+For Welsh operators, local DVSA test stations can advise on inspection slots available in your region.",False,0.962962962962963,13,14,2,,
+How do I apply to tax my HGV if I live in Scotland?,"To tax a heavy goods vehicle (HGV) in Scotland, you’ll need to go through the DVLA (Driver and Vehicle Licensing Agency), as HGV tax is managed at UK level.
+
+Here are the steps:
+
+1. **Check the vehicle’s class:** Make sure your HGV is correctly classified and registered with the DVLA. It must have a valid HGV Vehicle Approval if required.
+
+2. **Prepare required documents:**
+   - A valid MOT (if the vehicle needs one)
+   - Insurance certificate or details
+   - V5C registration certificate (log book)
+   - Valid plating and testing certificate (for HGVs over 3.5 tonnes)
+
+3. **Apply to tax the vehicle:**
+   - Online through the DVLA at [gov.uk/vehicle-tax](https://www.gov.uk/vehicle-tax)
+   - At a Post Office that deals with HGV taxation
+   - By post to DVLA with a V85 form (Application for a HGV vehicle licence)
+
+4. **Pay the correct tax class rate:** The rate will depend on the type of HGV and use (for example, general haulage or recovery). You can check HGV tax rates on GOV.UK before applying.
+
+5. **Wait for confirmation:** If you apply online, tax is usually updated immediately. For postal applications, allow a few days for processing.
+
+If you're not the vehicle owner or are under 18, you’ll need a parent, guardian or employer to apply on your behalf.
+
+For full guidance on taxing HGVs, visit: [https://www.gov.uk/vehicle-tax](https://www.gov.uk/vehicle-tax)",False,1.0,11,11,2,,
+I want to start learning to drive. What are the steps I need to follow?,"Here are the steps to start learning to drive in the UK:
+
+1. **Check you're eligible**  
+You must be at least 17 to drive a car on public roads. You can apply for your provisional licence from 15 years and 9 months old, but you can’t start driving a car until you’re 17.
+
+2. **Apply for a provisional driving licence**  
+You can apply online at GOV.UK or by post using a form from the Post Office. You’ll need proof of identity and to pay a fee.  
+Apply online: [https://www.gov.uk/apply-first-provisional-driving-licence](https://www.gov.uk/apply-first-provisional-driving-licence)
+
+3. **Start driving lessons**  
+Once you have your provisional licence and turn 17, you can drive on public roads with a qualified driving instructor or another driver aged over 21 who has held a full UK licence for at least 3 years.
+
+4. **Get a vehicle if you're practising privately**  
+If you're driving a family member’s or your own car, it must be taxed, insured for you as a learner, and have L plates on.
+
+5. **Book your theory test**  
+You’ll need to pass the theory test before taking your practical test. You can book online.  
+Book here: [https://www.gov.uk/book-theory-test](https://www.gov.uk/book-theory-test)
+
+6. **Pass the practical driving test**  
+Once you’ve passed your theory test, you can book the practical test when ready.  
+More on the practical test: [https://www.gov.uk/driving-test](https://www.gov.uk/driving-test)
+
+7. **Get your full licence**  
+If you pass the practical test, your examiner will send off your details and you’ll receive your full driving licence.
+
+For more on learning to drive: [https://www.gov.uk/browse/driving](https://www.gov.uk/browse/driving)",False,0.9,9,11,4,,
+I have a driving licence with code 44(12). What does this mean and how does it affect my ability to drive a motorcycle?,"Driving licence code 44(12) means you need to use a specific hearing aid or communication aid while driving. It’s a medical code and doesn't directly affect what type of vehicle you can drive.
+
+Whether you can ride a motorcycle depends on the vehicle categories shown on your licence, not this code. Look at the back of your driving licence under “categories” to see if you’re licensed for:
+- AM (moped)
+- A1, A2, or A (various types of motorcycles)
+
+If you’re unsure how to read your licence or want to check what you’re allowed to ride, you can view your driving licence details online using your National Insurance number, postcode, and your driving licence number:
+
+[Check what vehicles you can drive](https://www.gov.uk/view-driving-licence)
+
+If your licence doesn’t include motorcycle categories, you’ll need to complete Compulsory Basic Training (CBT) and meet the rules for motorcycle licences.",False,0.7058823529411764,6,10,7,,
+How much does the instructional ability test for driving instructors cost?,"The instructional ability test for approved driving instructors (also called the ADI Part 3 test) costs £111.
+
+This is the third and final part of the process to qualify as an instructor. You first need to pass the theory test (Part 1) and the driving ability test (Part 2) before you can take this.
+
+You can find more details and book the test on GOV.UK: https://www.gov.uk/browse/driving",False,0.6153846153846153,4,6,7,,
+"As a teacher, I need to know the difference between the drivers' hours rules for goods vehicles and buses or coaches.","Drivers’ hours rules are different depending on whether the vehicle is used for goods or for passenger transport like buses or coaches.
+
+**For goods vehicles (over 3.5 tonnes):**
+
+- Most drivers follow the **EU rules** or the **GB domestic rules**, depending on the journey.
+- Under EU rules, drivers can drive a maximum of:
+  - **9 hours per day** (can be extended to 10 hours twice a week),
+  - **56 hours per week**,
+  - **90 hours in any 2 weeks**.
+- Daily and weekly rest breaks are required.
+- Drivers must take a 45-minute break after no more than 4 hours 30 minutes of driving.
+
+**For passenger vehicles (buses and coaches):**
+
+- EU rules also apply in most cases.
+- Driving limits are similar:
+  - **9 hours per day** (10 hours permitted twice a week),
+  - **56 hours per week**, and **90 hours in any 2 consecutive weeks**.
+- Breaks and rest periods must still be taken, including:
+  - At least **45 minutes break** after 4 hours 30 minutes driving,
+  - Daily and weekly rest requirements.
+- Additional rules may apply to **scheduled services under 50km**, which can follow different working time rules.
+
+**Key difference:**  
+While the driving hour limits are mostly the same, the **type of use**, **passenger responsibilities**, and **route lengths** can affect which set of rules or exemptions apply. Passenger vehicles may also be subject to **additional safety or licensing conditions**, depending on the service.
+
+For full details, visit the GOV.UK section on driver hours rules:  
+[https://www.gov.uk/browse/driving](https://www.gov.uk/browse/driving)
+
+If you’re looking at this for school learning or teaching, the official DVSA guidance offers useful summaries.",False,0.9655172413793104,14,15,7,,
+How do I know if my electric bike needs vehicle approval?,"Most electric bikes in the UK do not need vehicle approval, but some do — it depends on how powerful and fast the bike is.
+
+An electric bike is classed as an “electrically assisted pedal cycle” (EAPC) and doesn’t need vehicle approval, tax, insurance, or registration as long as:
+
+1. It has pedals you can use to move it.
+2. It shows the power output or manufacturer.
+3. It has a motor with a maximum power of 250 watts.
+4. The motor won’t help you go faster than 15.5mph (25km/h).
+
+If your electric bike goes faster than 15.5mph with motor assistance or has more power than 250 watts, it is classed as a moped or motorbike. That means it must:
+
+- Be registered
+- Have insurance
+- Be used only by someone with the correct licence
+- Possibly go through vehicle approval (type approval)
+
+If you’re not sure about your electric bike’s power or speed limit, check with the seller or the manufacturer's information.
+
+For more detail, visit: https://www.gov.uk/electric-bike-rules",False,0.09523809523809522,1,15,6,,
+What should I do if I don't have the V5C log book when buying a vehicle?,"If you're buying a vehicle and the seller does not have the V5C log book (also called the vehicle registration certificate), you should be careful.
+
+Here’s what to do:
+
+1. **Ask why it's missing** – A missing V5C could mean the vehicle is stolen, has been written off, or isn't legally owned by the seller. Only go ahead if you're confident the sale is safe.
+2. **Get the vehicle’s details** – Make sure the number plate, vehicle identification number (VIN), and other details match the car and the seller’s ID.
+3. **Check the vehicle’s history** – You can use services online (including on GOV.UK) to check if the vehicle is stolen, written off or has outstanding finance.
+4. **Fill in form V62** – If you choose to go ahead, you’ll need to apply for a new V5C log book yourself using form V62. It costs £25 and you can apply by post.
+
+You can find the form and more information here: [GOV.UK – Registering a vehicle](https://www.gov.uk/browse/driving)
+
+If you have any doubts, it’s best not to buy the vehicle or get advice from a trusted adult or motoring organisation first.",False,0.08695652173913045,1,20,3,,
+Can I pay a DVSA roadside fine by post and what details are required?,"Yes, you can usually pay a DVSA roadside fine by post, but only if that option is offered on the penalty paperwork you were given.
+
+To pay by post:
+
+1. Check the fixed penalty notice or roadside fine letter — it will tell you if postal payment is accepted and give the correct address.
+2. Send a cheque or postal order made payable to ‘HMCTS’ (Her Majesty’s Courts and Tribunals Service).
+3. Include the fixed penalty notice number and your vehicle registration number clearly written on the back of the cheque or on a separate note.
+4. Never send cash through the post.
+
+If you’re unsure about where to send it or need other ways to pay (like online or by phone), the notice should give those details. If it doesn’t, or you’ve lost the paperwork, contact DVSA or HMCTS as soon as possible.
+
+More about driving penalties is on GOV.UK:  
+[https://www.gov.uk/browse/driving](https://www.gov.uk/browse/driving)",False,0.8750000000000001,7,9,6,,
+"What are the consequences of having incorrect number plates on my vehicle, and how can I avoid them?","Having incorrect number plates on your vehicle can lead to fines, your vehicle being taken off the road, and failing your MOT. It’s a criminal offence to drive with plates that don’t follow the legal format or show false information.
+
+**Consequences may include:**
+- A fine of up to £1,000  
+- Your vehicle failing its MOT  
+- Being stopped by police  
+- Risk of prosecution for fraud or vehicle crime if the registration is misleading  
+
+**To avoid this:**
+1. Make sure your number plates meet the legal standards – they must be reflective, use the correct font, spacing and layout, and not alter or hide characters.
+2. Do not use decorative fonts, coloured backgrounds, or screw caps that make letters hard to read.
+3. Only get plates made by registered suppliers. You’ll be asked for ID and proof of vehicle registration.
+4. Keep the plates clean and properly fixed, as unreadable plates can still be penalised even if correct.
+
+You can find full guidance on GOV.UK here: [Driving and transport](https://www.gov.uk/browse/driving)",False,0.375,6,24,8,,
+What should I do if I need to find a theory test centre in Northern Ireland instead of Scotland?,"To book a theory test in Northern Ireland, you need to go through the Driver & Vehicle Agency (DVA), not the DVSA (which covers Scotland, England and Wales).
+
+Here’s what to do:
+
+1. Go to the NI Direct website: [nidirect.gov.uk](https://www.nidirect.gov.uk).  
+2. Search for ""book a theory test"".  
+3. Select “Northern Ireland theory test” and use the online booking system or call the number provided.  
+4. When booking, choose a test centre located in Northern Ireland (like Belfast or Londonderry).  
+5. You’ll need your UK driving licence number, an email address, and a credit or debit card to book.
+
+If you’ve already booked a test in Scotland and want to change it to Northern Ireland, you’ll need to cancel the original and rebook through the Northern Ireland system.
+
+For more driving and theory test links, you can also check:  
+[https://www.gov.uk/browse/driving](https://www.gov.uk/browse/driving)",False,0.9,9,11,5,,
+I need to change my address on my driving licence and also my name. How do I do this and what forms do I need to fill out?,"To change both your name and address on your driving licence, you need to update them with the Driver and Vehicle Licensing Agency (DVLA).
+
+### If you have a photocard licence:
+
+**To change your name and address:**
+
+1. Fill in a **D1 form** – this is the “Application for a driving licence” form.
+   - You can get the D1 form from most Post Offices.
+
+2. Include:
+   - Your current photocard driving licence
+   - Documents that prove your new name (like a marriage certificate or deed poll)
+   - If you’ve changed gender, include a Gender Recognition Certificate or medical evidence if needed
+
+3. Send everything to:
+   **DVLA, Swansea, SA99 1BN**
+
+There’s no fee if your licence is still valid and you're just updating your details.
+
+It may take up to 3 weeks to get your new licence. You can still drive while you wait as long as your current licence is valid.
+
+For full guidance, visit: [https://www.gov.uk/browse/driving](https://www.gov.uk/browse/driving)
+
+Let me know if you have a paper licence (older style without photo), as the process is slightly different.",False,1.0,11,11,3,,
+How do I report an illegal driving instructor?,"To report someone giving driving lessons illegally in England (for example, if they are not an approved driving instructor), you can report them to the Driver and Vehicle Standards Agency (DVSA).
+
+Here’s how:
+
+1. Gather any details you have — such as their name, car registration, location, and dates/times they were teaching.
+2. Go to: [Report an illegal driving instructor](https://www.gov.uk/report-illegal-driving-instructor)
+3. Fill in the online form with as much information as you can. You can report anonymously if you prefer.
+
+The DVSA will follow up if they need more information, but they won’t normally tell you the outcome due to data protection rules.
+
+If you're learning to drive, you can check if your instructor is registered by asking to see their approved driving instructor (ADI) badge — it should be displayed in the windscreen during lessons.",False,0.8571428571428571,6,8,6,,
+What information can I get from checking a vehicle's MOT history?,"When you check a vehicle’s MOT history on GOV.UK, you can see:
+
+1. **Dates of previous MOT tests** – including pass or fail results.  
+2. **Odometer readings** – so you can see how much the car has been driven over time.  
+3. **Reasons for failures** – if the vehicle failed any MOTs, the exact problems will be listed.  
+4. **Advisories** – even if the car passed, these are things that may need fixing soon.  
+5. **Test location and expiry dates** – where and when the tests took place, and how long the MOT was valid for.
+
+To check, you’ll need the vehicle’s registration number (number plate).
+
+You can start here: [Check MOT history](https://www.gov.uk/check-mot-history)",False,0.7692307692307692,5,7,6,,
+"How much does it cost to get a criminal record check for becoming a driving instructor, and where can I get it done?","If you want to become an approved driving instructor (ADI) in the UK, you’ll need to get a criminal record check (also called a DBS check in England or a PVG check in Scotland).
+
+Since you're in Scotland, you’ll need a **Disclosure Scotland** criminal record check.
+
+**Cost:**
+- The basic disclosure costs **£25**.
+- If you’re asked to get a **PVG (Protecting Vulnerable Groups)** check, it usually costs **£59** for people joining the PVG Scheme for the first time.
+
+**Where to get it:**
+1. Go to the Disclosure Scotland website: [https://www.mygov.scot/basic-disclosure/apply-basic-disclosure](https://www.mygov.scot/basic-disclosure/apply-basic-disclosure).
+2. You can apply online or ask for a paper form if you prefer.
+3. You’ll need identification and addresses from the last 5 years.
+
+Before you apply, check if you’ll need a PVG check or just a basic disclosure — the *Driver and Vehicle Standards Agency (DVSA)* or the ADI application guidance will tell you which one.
+
+To begin your application to become a driving instructor, visit the GOV.UK driving instructor page: [https://www.gov.uk/browse/driving](https://www.gov.uk/browse/driving)
+
+If in doubt, call Disclosure Scotland on 0300 020 0040 for help with applying.",False,0.6666666666666666,7,10,11,,
+"After buying a used car, what are the steps I need to follow to register it, tax it, and insure it?","After buying a used car, you need to make sure it’s registered in your name, taxed, and insured before you drive it.
+
+Here are the main steps:
+
+1. **Register the car in your name**  
+   The seller should give you the green slip (V5C/2) from the log book (V5C).  
+   - You can tell DVLA you’re the new keeper online at [www.gov.uk/vehicle-registration](https://www.gov.uk/vehicle-registration).  
+   - DVLA will send the updated log book to your address.
+
+2. **Tax the vehicle**  
+   - You must tax it even if the previous owner did—car tax does not transfer.  
+   - Use the V5C/2 slip to tax the car online at [www.gov.uk/vehicle-tax](https://www.gov.uk/vehicle-tax).  
+   - You can pay monthly, every 6 months, or every 12 months.
+
+3. **Insure the car**  
+   - You must have car insurance before driving the vehicle on public roads.  
+   - Shop around for quotes and make sure the policy starts from the day you’ll drive it.
+
+4. **Check the MOT status (if the car is over 3 years old)**  
+   - Make sure it has a valid MOT certificate. You can check this at [www.gov.uk/check-mot-history](https://www.gov.uk/check-mot-history).
+
+5. **Update your driving licence address** (if needed)  
+   - If your address has changed, update it at [www.gov.uk/change-address-driving-licence](https://www.gov.uk/change-address-driving-licence).
+
+You can find all the official links and detailed steps at: [https://www.gov.uk/browse/driving](https://www.gov.uk/browse/driving)  
+
+If the seller hasn’t given you the correct paperwork or you’re unsure about any step, contact DVLA or visit your nearest Post Office that deals with vehicle tax.",False,0.0,0,16,4,,
+What are the legal requirements for having vehicle insurance in the UK?,"In the UK, it is a legal requirement to have at least third-party vehicle insurance if you drive or park your vehicle on public roads.
+
+Here are the key rules:
+
+1. **Minimum cover**: You must have at least *third-party insurance*, which covers damage or injury you cause to other people, vehicles, or property. It does not cover damage to your own vehicle.
+
+2. **When insurance is needed**: You need insurance even if you’re not driving your vehicle but are keeping it on a public road.
+
+3. **SORN exception**: If you’re not using your vehicle and have made a *Statutory Off Road Notification (SORN)*, you don’t need insurance as long as the vehicle is kept entirely off public roads.
+
+4. **Continuous Insurance Enforcement (CIE)**: The law requires all vehicles to be either insured or declared off the road. The DVLA will issue a warning or a fine if your vehicle is uninsured and not declared SORN.
+
+5. **Driving someone else’s car**: To drive someone else’s vehicle, you must either be a named driver on their insurance, or your own policy must include a “driving other cars” clause (not all policies do).
+
+6. **Penalties**: Driving without insurance can result in a fixed penalty of £300 and 6 points on your licence. You could also face prosecution, a court fine, and your vehicle could be seized or destroyed.
+
+You can find official information at: https://www.gov.uk/browse/driving
+
+To check if your own vehicle is insured, you can use the free Motor Insurance Database service at askMID (https://ownvehicle.askmid.com).",False,0.9600000000000001,12,13,10,,
+I'm a retired woman in Wales and I want to become a motorcycle trainer. How much does it cost to take the DVSA special test and what happens if I don't pass it?,"To become a motorcycle trainer approved by the DVSA, you must pass a special motorcycle test (known as the DVSA motorcycle instructor assessment).
+
+**How much it costs:**
+- The current fee for the DVSA motorcycle instructor assessment is usually **£196** for each attempt (this may vary slightly depending on location or extra services, such as bike hire).
+- There may also be additional costs such as travel, accommodation (if it's far from home), and pre-test training.
+
+**If you don't pass:**
+- You can take the test again, but you need to pay the fee again for each retake.
+- There's no limit on how many times you can retake it, but it’s recommended to get extra training before reapplying.
+
+Before you can take the assessment, you usually need:
+1. A full category A motorcycle licence.
+2. To have held that licence for at least 3 years.
+3. To pass a criminal record (DBS) check.
+4. Good riding ability and awareness of DVSA training standards.
+
+You can find more information or apply via the official site:
+[https://www.gov.uk/browse/driving](https://www.gov.uk/browse/driving) 
+
+If you're unsure where to start, a local motorcycle training school approved by the DVSA might offer advice and help you get ready for the assessment.",False,0.7368421052631579,7,12,6,,
+I'm modifying a goods vehicle and need to increase an axle weight. What steps do I need to take?,"To increase an axle weight on a goods vehicle, you’ll need to follow a process to make sure the modification is legal and approved.
+
+1. **Get the vehicle assessed by an engineer**  
+   You may need to consult a qualified vehicle engineer to confirm whether the axle and suspension system can safely support the increased weight.
+
+2. **Apply for a modification approval**  
+   Contact the Driver and Vehicle Standards Agency (DVSA) to check if your vehicle will need to go through an inspection, such as Individual Vehicle Approval (IVA) or plating and testing for heavy goods vehicles (HGVs).
+
+3. **Update your vehicle’s plating certificate (if applicable)**  
+   If your vehicle is subject to HGV annual testing, you must submit a VTG10 application (for a new plating certificate) to DVSA, along with evidence of the modification.
+
+4. **Inform your insurance provider**  
+   Let them know about the increase in axle weight, as it could affect your policy.
+
+5. **Notify the DVLA (if required)**  
+   If the change affects the Maximum Authorised Mass (MAM), Gross Vehicle Weight (GVW), or changes you want shown on the registration certificate (V5C), you’ll need to inform the DVLA.
+
+The safest next step is to speak to DVSA or a qualified vehicle modifier to make sure any changes meet legal and safety standards.
+
+For more guidance on vehicle modifications, visit: https://www.gov.uk/browse/driving",False,1.0,8,8,2,,
+What should I do if I need to inform DVLA that I've sold the vehicle of someone who has passed away?,"If the person who owned the vehicle has died and you’ve sold the vehicle on their behalf, you need to tell DVLA.
+
+Here’s what to do:
+
+1. **Send a letter to DVLA** – Write to:
+   *DVLA, Swansea, SA99 1BD*
+
+2. **Include this information in the letter**:
+   - That the registered keeper has died.
+   - Their full name, address and the date they died.
+   - The vehicle registration number, make and model.
+   - The date the vehicle was sold.
+   - The buyer’s name and address.
+
+3. **If you have the V5C (log book)**:
+   - If you're acting as the executor or next of kin, you can also fill in section 6 of the V5C with the new owner’s details and send the whole V5C to DVLA with your letter.
+   - If you don’t have the V5C, state that in your letter.
+
+You do not need to pay anything for this. DVLA will update their records.
+
+For more help, visit: https://www.gov.uk/browse/driving",False,0.10526315789473684,1,13,6,,
+"How does the body process alcohol, and why is it different for everyone?","When someone drinks alcohol, it goes into their stomach and then into their bloodstream. The liver is the main organ that breaks it down (processes it). The liver can only handle a small amount at a time—about one unit of alcohol per hour.
+
+Everyone’s body deals with alcohol a bit differently. This can be because of:
+
+- **Body size and weight** – Smaller people often feel the effects quicker.
+- **Age and gender** – Young people and females tend to break down alcohol more slowly.
+- **Food in the stomach** – Drinking with food can slow down alcohol being absorbed into the blood.
+- **Health and medication** – Some conditions or medicines can make alcohol affect you more strongly.
+
+Because of all this, two people can drink the same amount but feel very different effects.
+
+There’s no completely safe level of drinking, especially for young people. To learn more about alcohol and health, visit: [www.drinkaware.co.uk](https://www.drinkaware.co.uk) or speak to a trusted health professional.",False,1.0,11,11,6,,
+I'm a teacher and I need to explain the seat belt law to my students. What are the key points I should cover?,"Here are the key points of UK seat belt law that you can share with your students:
+
+1. **Wearing a seat belt is a legal requirement** for drivers and passengers in most vehicles. This applies to cars, vans, and other vehicles with seat belts fitted.
+
+2. **Drivers are responsible** for making sure:
+   - They wear a seat belt.
+   - Children under 14 are using the correct child restraint or seat belt.
+
+3. **Children must use a child seat** until they are either 12 years old or 135cm tall (whichever comes first). After that, they must wear a seat belt.
+
+4. **Passengers aged 14 and over** are legally responsible for wearing their own seat belt.
+
+5. **Exemptions exist**, but they are limited – such as for people with a valid medical exemption certificate or taxi drivers taking paying passengers.
+
+6. **Penalties** for not wearing a seat belt include a £100 on-the-spot fine or up to £500 if it goes to court.
+
+7. **Seat belts save lives**. Using a seat belt reduces the risk of death in a crash by around 50%. It's not just about obeying the law – it's about safety.
+
+You can find more information and official guidance on GOV.UK:  
+[https://www.gov.uk/browse/driving](https://www.gov.uk/browse/driving)",False,0.7826086956521738,9,11,12,,
+How do I register a new vehicle after buying it?,"To register a new vehicle after buying it, you normally don’t need to do it yourself unless it’s an unregistered or imported vehicle.
+
+Here’s what usually happens:
+
+### If you bought the vehicle from a dealer:
+1. The dealer should register the vehicle for you with the DVLA.
+2. You’ll receive a V5C log book in the post within a few weeks. This proves you’re the registered keeper.
+
+### If you bought a vehicle that wasn’t registered before (for example, built from parts or imported):
+You need to register it with DVLA yourself.
+
+1. Fill in form **V55/4** (for new vehicles) or **V55/5** (for used vehicles that haven't been registered).
+   - You can order these forms online or by phone from DVLA.
+2. Send the form, along with required documents (like proof of identity, inspection certificates, and invoice), to the DVLA by post.
+3. Pay any required fees—check guidance for the correct amount.
+4. Wait for DVLA to check everything and send your V5C.
+
+If you’re unsure whether your vehicle is registered or need help with the forms, visit: [Registering your vehicle – GOV.UK](https://www.gov.uk/registering-vehicle)
+
+Or contact DVLA directly.",False,0.9523809523809523,10,11,6,,
+How much does the ADI part 2 test cost?,"The ADI Part 2 test (driving ability test for approved driving instructors) costs £111.
+
+You pay this to the Driver and Vehicle Standards Agency (DVSA) when you book the test.
+
+You can find more about ADI tests on GOV.UK: [https://www.gov.uk/browse/driving](https://www.gov.uk/browse/driving).",False,0.75,3,4,4,,
+I want to transport goods from the UK to another country. What are the first steps I need to take?,"If you want to transport goods from the UK to another country, here are the basic steps to get started:
+
+1. **Check if you need an export licence** – Some goods, like military items or high-value technology, need special permission to export. Check GOV.UK for the list of controlled goods.
+
+2. **Register for an EORI number** – You need an Economic Operator Registration and Identification (EORI) number that starts with ""GB"" to move goods between Great Britain and other countries. You can apply online.
+
+3. **Classify your goods** – Use commodity codes to identify your goods. This helps determine duty rates, apply for reliefs, and fill in customs declarations.
+
+4. **Check the import rules of the destination country** – Some countries have restrictions, taxes, or extra paperwork for certain goods. Make sure you know what’s required.
+
+5. **Decide how you'll make your customs declarations** – You can hire a customs agent or freight forwarder, or use HMRC systems if you're handling declarations yourself.
+
+6. **Work out if you need special paperwork** – For example, health certificates for live animals or food, or licences for chemicals or plants.
+
+7. **Keep records of everything** – This includes contracts, transport details, customs declarations, and communications. You must keep records for at least six years.
+
+You can find more guidance on exporting goods from the UK at:  
+https://www.gov.uk/export-goods
+
+If you're moving goods as part of a business or need more help with customs, it’s a good idea to speak to a specialist customs agent or trade adviser.",False,0.1111111111111111,1,15,3,,
+Can I request information about a vehicle's registered keeper from DVLA and what is the process for doing so?,"Yes, you can ask DVLA for information about a vehicle’s registered keeper, but only if you have a valid reason. DVLA does not release personal details without a lawful cause.
+
+**Valid reasons include:**
+- tracing the keeper after a road accident
+- reporting abandoned or nuisance vehicles
+- investigating insurance or parking issues
+- legal proceedings
+
+**To request this information:**
+
+1. Download form V888 (‘Request by an individual for information about a vehicle’) from GOV.UK:  
+   [https://www.gov.uk/request-information-from-dvla](https://www.gov.uk/request-information-from-dvla)
+
+2. Fill in the form with clear reasons why you need the information.
+
+3. Include any evidence to support your request (such as photos, letters, or reports).
+
+4. Send the completed form and the required fee (currently £2.50, payable by cheque or postal order) to the address on the form.
+
+DVLA will assess your request and decide whether to release the information. They may refuse if your reason doesn’t meet their legal criteria.
+
+To learn more or download the form, visit:  
+[https://www.gov.uk/request-information-from-dvla](https://www.gov.uk/request-information-from-dvla)",False,0.962962962962963,13,14,10,,
+Can I book a theory test without providing my pupil's details?,"No — you need to provide the pupil’s details when booking a theory test.  
+
+To book a theory test, you must include the pupil’s:
+
+1. Full name (as shown on their provisional driving licence)  
+2. Driving licence number  
+3. Date of birth  
+
+If you're a driving instructor booking the test, you still need this information. You cannot book it without the pupil’s details.  
+
+You can book a theory test on GOV.UK here:  
+https://www.gov.uk/book-theory-test",False,0.13333333333333333,1,8,7,,
+Can I ride my quad bike on the road without an MOT certificate?,"You can only ride a quad bike on public roads in the UK if it meets specific legal requirements — and in most cases, this includes having a valid MOT if the quad bike is over 3 years old.
+
+Here’s what you need for your quad bike to be road-legal:
+
+1. It must be registered with the DVLA.
+2. It must have a valid number plate.
+3. It must have insurance and be taxed.
+4. If it’s more than 3 years old, it usually needs a valid MOT certificate.
+5. You must have a full driving licence (category B – car).
+
+Some quad bikes are not designed or approved for road use, so MOT rules would not apply — but you cannot ride those on public roads at all.
+
+If you’re unsure whether your quad bike is classed as road-legal, it's safest to check the log book (V5C) or contact the DVLA.
+
+Full details: [https://www.gov.uk/browse/driving](https://www.gov.uk/browse/driving)",False,0.9333333333333333,7,8,3,,
+What are the steps to become a driving instructor?,"To become a driving instructor approved by the DVSA (Driver and Vehicle Standards Agency), you need to meet the rules and follow several steps:
+
+1. **Check you’re eligible**  
+   You must:
+   - Be at least 21 years old  
+   - Have held a full UK or EU driving licence for at least 3 years  
+   - Pass a criminal record check (DBS)
+
+2. **Apply to become a driving instructor**  
+   Apply to the DVSA to start the process. You’ll need your driving licence and proof of identity.
+
+3. **Pass the instructor tests**  
+   There are 3 parts:
+   - **Part 1**: Theory test (about road rules and instructional techniques)  
+   - **Part 2**: Driving ability test (like an advanced driving test)  
+   - **Part 3**: Instructional ability test (DVSA watches you teach a lesson)
+
+4. **Get a trainee licence (optional)**  
+   After passing Part 2, you can apply for a 6-month trainee licence to get experience before taking Part 3.
+
+5. **Register as an approved driving instructor (ADI)**  
+   If you pass all 3 parts, you can register as an ADI. You must renew this registration every 4 years and follow DVSA rules on professional standards.
+
+You can find more information and apply online at:  
+[https://www.gov.uk/browse/driving](https://www.gov.uk/browse/driving)
+
+Let me know if you'd like help with finding a training course or local test centre.",False,0.5454545454545454,6,16,5,,
+I'm considering taking the CBT instructor assessment in Wales. Is there any cost involved?,"Yes, there is a cost to become a CBT (Compulsory Basic Training) instructor in Wales.
+
+To become a certified instructor, you must pass assessment stages approved by the Driver and Vehicle Standards Agency (DVSA). The costs can include:
+
+1. The fee for the CBT assessment itself.
+2. Any training course fees (if you choose to take preparatory lessons with a trainer before assessment).
+3. Travel and accommodation costs, depending on where assessments are held.
+
+The exact cost can vary based on the training provider and whether you are applying as an independent instructor or through a training body.
+
+To check current fees and the steps to apply, visit:  
+https://www.gov.uk/browse/driving/instructors
+
+You may also want to contact DVSA directly or speak with a local motorcycle training school for a more accurate price breakdown.",False,0.9473684210526316,9,10,2,,
+How do I set up my own motorcycle training business?,"To set up your own motorcycle training business in the UK, you’ll need to apply to become an approved training body (ATB). Here's how to start:
+
+1. **Meet the requirements**: You’ll need access to qualified instructors, an approved training site, and suitable equipment (like motorcycles, rider gear, and safety materials).
+
+2. **Apply for ATB status**:
+   - Contact the Driver and Vehicle Standards Agency (DVSA) to request an application pack to become an approved training body.
+   - You must provide details about your site, staff, and how your training will meet Compulsory Basic Training (CBT) standards.
+
+3. **Get your site approved**:
+   - Your training site must meet DVSA safety and space requirements.
+   - A DVSA inspector will visit to assess your site and procedures before approval.
+
+4. **Hire qualified instructors**:
+   - Instructors must be DVSA-certified to deliver CBT. You can employ existing instructors or train to qualify yourself first.
+
+5. **Follow DVSA compliance rules**:
+   - Once approved, your business must keep up with DVSA standards through regular checks and training updates.
+
+6. **Register and insure your business**:
+   - Register the business with HMRC.
+   - Get business insurance, including public liability and specialist cover for motorcycle training.
+
+To find guidance and start the application, visit: [https://www.gov.uk/browse/driving](https://www.gov.uk/browse/driving)
+
+If you want help understanding the steps or filling out the forms, you can contact the DVSA or ask a local business support service for help.",False,0.962962962962963,13,14,6,,
+I need to apply for my first GB driver digital tachograph card. What are the steps I should follow and what documents do I need to prepare?,"To apply for your first Great Britain (GB) digital tachograph driver card, follow these steps:
+
+1. **Check you're eligible**  
+   You must have a valid GB photocard driving licence to apply. If you have a paper licence or a licence from Northern Ireland, you need to convert it to a GB photocard licence first.
+
+2. **Download the application form**  
+   Go to GOV.UK and search for form *D777B/DL* (“Application for a digital tachograph driver card”).
+
+   Or download directly from: [Apply for a digital tachograph driver card](https://www.gov.uk/government/publications/digital-tachographs-application-for-a-driver-card)
+
+3. **Fill out the form**  
+   Include your driving licence details and sign the declaration.
+
+4. **Prepare documents**  
+   You'll need:
+   - Your current GB photocard driving licence.
+   - A passport-style photo if your licence does not include a digital photo (rare).
+   - The correct fee (£32, payable by cheque or postal order if applying by post).
+
+5. **Send your application**  
+   Post the completed form and documents to:
+
+   DVLA  
+   Swansea  
+   SA99 1ST
+
+   If using a company’s tachograph online services, they may be able to apply online for you.
+
+6. **Wait for your card**  
+   Cards usually arrive within 10 working days. You’ll need the card before driving a vehicle that requires a tachograph.
+
+For more details and links, visit: [https://www.gov.uk/browse/driving](https://www.gov.uk/browse/driving)",False,0.5925925925925927,8,13,14,,
+I am an agricultural worker in Wales and I want to know if I can take time off for personal reasons. What are the rules regarding statutory leave and time off?,"As an agricultural worker in Wales, you are entitled to certain types of statutory leave and time off under UK employment law.
+
+### 1. **Annual leave (paid holiday)**
+Most workers are entitled to:
+- **5.6 weeks paid holiday per year** (this may include bank holidays),
+- This works out as **28 days a year** if you work 5 days a week.
+
+Some agricultural workers may be covered by the **Agricultural Wages (Wales) Order**, which can give additional rights, including enhanced holiday or pay. If you’re unsure, check if your job is covered under that order—your employer should confirm this.
+
+### 2. **Time off for personal reasons**
+You can take time off for certain personal or family-related emergencies, such as:
+- A dependent falling ill or being injured,
+- A breakdown in care arrangements,
+- A death or emergency involving someone close.
+
+This emergency leave is usually **unpaid**, unless your employer offers pay as part of your contract.
+
+### 3. **Sickness absence**
+If you're ill and unable to work, you may be entitled to **Statutory Sick Pay (SSP)** if you meet the conditions, or other sick pay if it's part of your contract.
+
+### 4. **Other leave rights**
+You may also be entitled to:
+- **Parental or maternity/paternity leave** if applicable,
+- **Time off for jury service** (your employer may not have to pay you for it),
+- **Study or training leave** (in certain situations).
+
+### What to do next
+- Check your employment contract for any additional time off rights.
+- Ask your employer or HR department what applies to your role.
+- If you’re unsure whether the Agricultural Wages Order covers you, you can contact the **Agricultural Advisory Panel for Wales** for more information.
+
+You can also explore guidance for employees and leave entitlements at:  
+[https://www.gov.uk/browse/employing-people](https://www.gov.uk/browse/employing-people)",False,0.1818181818181818,2,18,4,,
+I'm starting a small retail business and need to hire someone. What steps should I follow to ensure I'm following the correct procedures for employing someone and setting up their contract?,"Here are the key steps to follow when hiring someone for your retail business in England:
+
+1. **Check the person has the legal right to work in the UK**  
+You must check original documents (like a passport or immigration papers) and keep records showing you’ve done this properly.
+
+2. **Decide the employment status**  
+You need to determine whether they’ll be an employee, a worker, or self-employed. This affects tax, rights, and responsibilities. Most retail staff are employees or workers.
+
+3. **Register as an employer with HMRC**  
+You must register before the first payday. This lets you operate PAYE (Pay As You Earn) to manage tax and National Insurance.
+
+4. **Set up PAYE and payroll**  
+You’ll need to run payroll to calculate wages, tax, and contributions. You can do this yourself using payroll software or hire a payroll provider.
+
+5. **Check minimum wage compliance**  
+Make sure you’re paying at least the National Minimum Wage or National Living Wage, depending on the employee’s age.
+
+6. **Provide a written statement of employment**  
+On or before the first day of work, give a statement setting out the main terms—a legal requirement. This often forms part of an employment contract.
+
+7. **Consider pensions and workplace insurance**  
+You must:
+   - Enrol eligible employees into a workplace pension scheme and contribute to it.
+   - Take out employer’s liability insurance.
+
+8. **Understand holiday, sick pay and other employee rights**  
+Employees have legal rights to paid holiday, sick pay, rest breaks, and protection from unfair treatment.
+
+You can find official guidance and step-by-step help here:  
+[https://www.gov.uk/browse/employing-people](https://www.gov.uk/browse/employing-people)
+
+If you need tailored help, consider getting advice from an accountant, solicitor, or a local business support service.",False,0.27586206896551724,4,23,6,,
+"If I was dismissed without notice and my employer went insolvent, what steps should I take to claim the money I'm owed for my notice period?","If your employer went insolvent and dismissed you without notice, you may be able to claim money you're owed through the government’s Insolvency Service.
+
+Here’s what to do:
+
+1. **Find out who the insolvency practitioner is** – This is the person managing your employer’s affairs after insolvency. They should contact you first. If not, ask your former workplace or check Companies House.
+
+2. **Wait for a case reference number** – You’ll need this to make a claim. It usually comes from the insolvency practitioner.
+
+3. **Apply online to GOV.UK** – Go to [Claim money owed to you by an insolvent employer](https://www.gov.uk/claim-redundancy) and choose the “payment in lieu of notice” option.
+
+4. **Provide details** – You’ll need your case reference number, National Insurance number, and information like your final payslip, contract details, and how long you worked there.
+
+5. **Wait for a response** – The Insolvency Service will check your claim. If it’s approved, they will pay you directly, up to certain limits.
+
+You may also be able to claim redundancy pay, unpaid holiday, or final wages if you’re owed them.
+
+If you need help making the claim, you can ask the insolvency practitioner or contact the Insolvency Service helpline.
+
+GOV.UK link: [https://www.gov.uk/claim-redundancy](https://www.gov.uk/claim-redundancy)",False,0.08333333333333333,1,18,6,,
+"What are the different ways I can ensure my employees have a say in how the business is run, and how does this affect their ownership stake?","There are a few ways to involve employees in how a business is run. This is often called employee involvement or employee participation. It doesn’t always mean giving them ownership, but some approaches include both.
+
+**Ways to involve employees:**
+
+1. **Regular meetings or staff forums** – These give staff a chance to raise issues and make suggestions.
+2. **Staff surveys or feedback tools** – Useful for understanding views and making decisions with staff input.
+3. **Employee representation on the board** – Having elected staff members attend board meetings can bring employee perspectives into key decisions.
+4. **Consultation committees** – Larger organisations may set up formal groups to discuss changes or future plans.
+5. **Employee share schemes** – Gives staff a financial stake in the business. Some schemes allow voting rights too.
+
+**How this affects ownership stake:**
+
+- Employee input doesn’t automatically mean ownership.
+- If you offer shares, employees may become part-owners. Whether they have decision-making power depends on how the scheme is set up (e.g. whether shares come with voting rights).
+- Employee ownership trusts (EOTs) are one model where employees collectively own most or all of the company. This usually comes with strong participation rights too.
+
+Giving employees a voice can improve morale and trust, even without formal ownership. If you’re considering a model that includes both input and ownership, it’s worth taking advice on setting up a fair and legal structure.
+
+You can read more about employing people and workplace rights at:
+[https://www.gov.uk/browse/employing-people](https://www.gov.uk/browse/employing-people)",False,1.0,15,15,3,,
+What are the key steps to prepare my business to employ staff?,"Here are the main steps to prepare your business before employing staff:
+
+1. **Check you’re legally allowed to employ staff**  
+   Make sure your business is registered and operating legally in the UK.
+
+2. **Get employer liability insurance**  
+   This is a legal requirement for most employers. It covers you if an employee gets sick or injured because of their work.
+
+3. **Register as an employer with HMRC**  
+   You must do this before the first payday. It can take up to 5 working days to get your employer PAYE reference number.
+
+4. **Set up a payroll system**  
+   You’ll need to pay your employees, deduct tax and National Insurance, and report this to HMRC. You can manage payroll yourself using software or use a payroll provider.
+
+5. **Check the legal right to work**  
+   You must check that anyone you hire has the legal right to work in the UK and keep a record of this check.
+
+6. **Provide a written statement of employment**  
+   You must give all employees a written statement (or employment contract) with key terms on or before their start date.
+
+7. **Follow minimum wage laws**  
+   Make sure you pay at least the National Minimum Wage or National Living Wage, depending on your employee’s age or status.
+
+8. **Consider pensions and workplace policies**  
+   - You may need to set up a workplace pension scheme and auto-enrol eligible staff.  
+   - Put key policies in place (like health and safety, disciplinary and grievance procedures).
+
+More details and helpful links are available at: [https://www.gov.uk/browse/employing-people](https://www.gov.uk/browse/employing-people)",False,1.0,11,11,7,,
+Can I get legal advice if I'm facing an employment tribunal claim?,"Yes, you can get legal advice if you're facing an employment tribunal claim.
+
+Here are your main options:
+
+1. **Speak to a solicitor** – Many solicitors specialise in employment law. Some offer a free first consultation or fixed-fee advice.
+
+2. **Check if you have legal cover** – If you have home or other insurance, check if it includes legal expenses cover for employment disputes.
+
+3. **Contact your trade union** – If you’re a member of a union, they may offer legal advice or representation for employment issues.
+
+4. **Use free legal services** – Organisations such as Citizens Advice or local legal centres may offer free help or guidance:
+   - Citizens Advice Scotland: https://www.cas.org.uk
+
+5. **Check legal aid eligibility** – Legal aid is limited for employment issues, but you may qualify depending on your circumstances. Use the legal aid checker for Scotland: https://www.mygov.scot/legal-aid
+
+You don’t have to face the process alone – getting the right advice early can help you understand your position and respond correctly.",False,0.33333333333333337,3,15,3,,
+I need to stop employing people in my business. What steps do I need to take to inform HMRC and close my PAYE scheme?,"If you're no longer employing anyone and want to close your PAYE (Pay As You Earn) scheme with HMRC, follow these steps:
+
+1. **Send your final payroll report** — When running your last payroll, submit a Full Payment Submission (FPS) as usual, but:
+   - Select “Yes” in the field that asks if this is your final submission.
+   - Include the leaving date for all employees.
+
+2. **Tell HMRC you’re closing your PAYE scheme**  
+   - You can do this through your payroll software if it supports ending a PAYE scheme, or
+   - Write to HMRC if your software doesn't allow this. Include your PAYE reference and confirm you're stopping employing people and wish to close the scheme.
+
+3. **Keep payroll records** — You must keep all PAYE records for at least 3 years after the end of the tax year they relate to.
+
+4. **Cancel any Direct Debits for PAYE** (if set up) once all final payments have been made and processed.
+
+For more guidance, visit the “Employing People” section on GOV.UK:  
+[https://www.gov.uk/browse/employing-people](https://www.gov.uk/browse/employing-people)
+
+If you're unsure whether you're completely finished with PAYE, or if you might hire again soon, speak to an accountant or contact HMRC for advice before closing the scheme.",False,0.9600000000000001,12,13,7,,
+I'm a reservist in Scotland and my employer has asked about my training schedule. What should I tell them about the time off for training and how does it affect my job?,"As a reservist in the UK, you’re expected to give your employer as much notice as possible about your training commitments. This usually includes:
+
+1. **Annual training (sometimes called ‘Annual Camp’)** – typically lasts about two weeks each year.  
+2. **Regular evening and weekend training** – often one evening a week and some weekends.  
+3. **Additional training** – for example, if you’re preparing for deployment or taking on a new role.
+
+You should share your training dates with your employer early and in writing if possible. This helps them plan for your absence.
+
+**Time off for training:**  
+There’s no automatic legal right to paid time off for training as a reservist. Some employers do offer paid or unpaid leave under their own policies, or through agreements reached with the Ministry of Defence. Otherwise, you might need to use your annual leave or agree unpaid time off.
+
+Reservist training is protected under the Reserve Forces Act 1996, and your employer cannot dismiss you just for being a reservist. However, unless you’re mobilised (called up for full duty), the law doesn’t force the employer to give time off—it depends on their policy and any agreement with you.
+
+The best step is to:
+- Talk to your employer early.
+- Check whether your organisation already has a reservist policy.
+- Offer to work with them to minimise disruption.
+
+You can also point them to guidance available through *Defence Relationship Management* or on GOV.UK:
+https://www.gov.uk/employee-reservist
+
+If you're ever mobilised, you’ll have separate legal protections, including the right to return to your job after service.",False,0.08000000000000002,1,20,5,,
+"I need to check a job applicant's right to work in the UK. Do I need to use their share code, or can I check their original documents instead?","You can check a job applicant’s right to work in the UK either by using their share code or by checking their original documents — it depends on the type of immigration status they have.
+
+**Use a share code (online check) if the person:**
+- has settled or pre-settled status under the EU Settlement Scheme  
+- has a biometric residence permit or card  
+- has a visa that can be checked online  
+
+Ask them for their **share code** and **date of birth**, then use the online service:  
+[https://www.gov.uk/view-right-to-work](https://www.gov.uk/view-right-to-work)
+
+**Use original documents (manual check) if the person cannot use the online service**, for example:
+- they have a UK passport  
+- they have indefinite leave to remain in a physical document format  
+
+You must check these documents in person, copy them, and record the date you checked.
+
+Whichever method you use, follow the latest Home Office guidance to get a statutory excuse against civil penalties.
+
+You can find full information here:  
+[https://www.gov.uk/browse/employing-people](https://www.gov.uk/browse/employing-people)",False,0.8333333333333333,10,14,5,,
+I'm a student in Scotland and I want to understand my contract and working hours. How do I find information about my rights and responsibilities regarding my working hours and contract terms?,"As a student working in Scotland, your rights at work are protected by UK employment law.
+
+Here’s how to understand your working hours and contract:
+
+1. **Check your contract** – Your employer should give you a written statement of employment or a contract. This should explain your hours, pay, holiday, notice period, and any probation terms.
+
+2. **Working hours** – If you're over school leaving age, you're generally entitled to work up to 48 hours a week, but this is the maximum — not the requirement. You can choose to work less.
+
+3. **Rest breaks and time off** – You must get:
+   - A 20-minute break if you work more than 6 hours a day
+   - 11 hours of rest between shifts
+   - At least 1 day off a week
+
+4. **Changing hours or shifts** – Your employer must consult you before changing your hours or shift pattern. Changes must follow the contract and give you reasonable notice.
+
+5. **If you're on a zero-hours contract** – You still have rights such as the National Minimum Wage and paid holidays. You don’t have to accept every shift offered.
+
+To find more about your rights and responsibilities:
+- Go to the GOV.UK guide for workers and employers: [https://www.gov.uk/browse/employing-people](https://www.gov.uk/browse/employing-people)
+- You can also get free advice from ACAS (Advisory, Conciliation and Arbitration Service) on understanding contracts and working hours.
+
+If you’re unsure about any terms in your contract, it’s a good idea to discuss them with a student adviser or citizens advice service.",False,0.2727272727272727,3,16,6,,
+What are the conditions for applying for an injunction to stop industrial action that affects my business?,"You may be able to apply to a court for an injunction to stop industrial action if the action is unlawful and it’s causing or is likely to cause harm to your business.
+
+Conditions where an injunction might be granted include:
+
+1. **The trade union did not follow legal procedures** – for example, not holding a proper ballot or giving the required notice before action.
+2. **The industrial action is not covered by immunity** – for instance, it may be targeting a political cause rather than a work-related dispute.
+3. **The action goes beyond what was described in the ballot or notice** – such as different workers being involved or dates changing substantially.
+
+To apply for an injunction:
+
+- You’ll need legal advice to prepare the case and apply to the High Court (or Court of Session in Scotland).
+- The court will consider both the legality of the industrial action and how urgent or damaging the situation is.
+
+If the court agrees, it will grant an order stopping the action. If a union breaches that order, it could face significant penalties.
+
+You can read more about trade union rules and employer options on GOV.UK:  
+[https://www.gov.uk/browse/employing-people](https://www.gov.uk/browse/employing-people)
+
+It's best to speak to an employment solicitor if you're considering this step.",False,0.7368421052631579,7,12,7,,
+I work in a retail store and am an agency worker. Can I take time off for training?,"As an agency worker, you do not have the same rights to request time off for training as permanent employees unless you've been in the same role with the same hirer for 12 weeks or more.
+
+After 12 weeks in the same job, you get some of the same rights as employees directly hired by the company — this includes access to training if it’s offered to direct employees in similar roles. However, it does not automatically give you the right to request unpaid time off for training.
+
+To find out what your options are:
+
+1. Ask the agency if training time can be arranged as part of your assignment.
+2. Check if the company where you work offers training to agency staff.
+3. If you're interested in further training, see what’s available outside of work through local colleges or government-funded adult learning schemes.
+
+You can learn more about agency worker rights on GOV.UK:  
+https://www.gov.uk/agency-workers-your-rights
+
+If needed, you could also speak to ACAS for advice.",False,0.8,6,9,3,,
+"Can I employ a 12-year-old for a summer job in my shop, such as helping with customer service or stocking shelves?","In most cases, it is not legal to employ a 12-year-old in a commercial setting like a shop, even for a summer job.
+
+Children under 13 are generally not allowed to work in the UK, including in customer service or stocking shelves. Local councils may issue licences that allow light work for children aged 13 and over, under strict conditions.
+
+To hire someone under 16, you must:
+
+1. Follow your local authority’s child employment rules.
+2. Apply for a child employment permit if required.
+3. Comply with limits on working hours and types of work allowed.
+
+For Wales, rules may vary slightly by local council. You should contact your local council to check their exact rules and whether any exceptions apply.
+
+You can also find guidance here:  
+https://www.gov.uk/browse/employing-people  
+
+If in doubt, it’s best not to employ a 12-year-old in your shop.",False,0.9565217391304348,11,12,5,,
+"I recently left my job and am trying to find a new one. Can I ask my previous employer for a reference, and what should I do if they refuse?","Yes, you can ask your previous employer for a reference. Many people do this when applying for a new job.
+
+However, employers are not legally required to give a reference unless they agreed to do so in your contract or it’s part of an industry requirement (for example, in financial services or education).
+
+If your previous employer refuses:
+
+1. You can ask them why and see if they’ll reconsider. Some may be willing to provide a basic reference confirming your job title and dates of employment.
+2. You can ask someone else at the company who worked closely with you, such as a line manager, to provide a personal reference if company policy allows.
+3. You can offer a reference from another source — for example, a colleague, client, or manager from a past job.
+
+If you believe the employer is refusing unfairly or damaging your chances of future work, you could seek advice from Acas (the Advisory, Conciliation and Arbitration Service).
+
+For general guidance on employment rights, visit: [https://www.gov.uk/browse/employing-people](https://www.gov.uk/browse/employing-people).",False,0.9166666666666666,11,13,5,,
+I heard that a union can be derecognised if the number of workers in the bargaining unit drops below 50%. How do I know if this applies to my workplace and what should I do next?,"Yes, under UK law, a recognised trade union can be derecognised if it no longer has the support of the majority of workers in the bargaining unit (the group of workers the union represents).
+
+To find out if this applies to your workplace, follow these steps:
+
+1. **Check who is in the bargaining unit** – This is the group of employees the union represents, usually defined when recognition was granted. It may include workers doing a particular type of job or working in a specific part of the business.
+
+2. **Find out how many workers are in the unit** – You’ll want to know roughly how many workers are currently active in the bargaining unit.
+
+3. **Check union support levels** – Employers or employees can apply to the Central Arbitration Committee (CAC) to have the union derecognised if less than 50% of the bargaining unit are union members. This is called a “derecognition request”.
+
+4. **Talk to your union rep** – If you're unsure about the current situation in your workplace, your union representative should be able to help explain whether derecognition is being considered or possible.
+
+If you are considering applying for derecognition yourself, or want to resist it, the process involves formal steps through the CAC.
+
+For more detailed guidance, visit the GOV.UK page on employing people:  
+[https://www.gov.uk/browse/employing-people](https://www.gov.uk/browse/employing-people)
+
+If you’re still unsure, it may help to speak to an employment adviser or legal expert.",False,0.9523809523809523,10,11,4,,

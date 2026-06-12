@@ -25,7 +25,7 @@ logging.getLogger("litellm").setLevel(logging.CRITICAL)
 # 1. CONFIGURATION
 # ==========================================
 
-INPUT_CSV = "public_set_1.csv"
+INPUT_CSV = "subset_500_public_set_1.csv"
 OUTPUT_DIR = "fast_results"
 
 # Concurrency tuning
@@ -38,9 +38,9 @@ FEW_SHOT_FILE = os.path.join(PROMPT_DIR, "few_shot_test_examples.json")
 
 # Define target evaluation configurations
 TASKS = [
-    # GROQ (Kimi K2)
-    ("groq/moonshotai/kimi-k2-instruct-0905", "kimi_k2_0shot.csv", "zero"), 
-    ("groq/moonshotai/kimi-k2-instruct-0905", "kimi_k2_fewshot.csv", "few"),
+    # GROQ (Llama 3.1 8B)
+    ("groq/llama-3.1-8b-instant", "llama_3.1_8b_0shot.csv", "zero"), 
+    ("groq/llama-3.1-8b-instant", "llama_3.1_8b_fewshot.csv", "few"),
 ]
 
 # ==========================================
